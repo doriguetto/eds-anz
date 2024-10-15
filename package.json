@@ -3,10 +3,16 @@
   "private": true,
   "version": "1.3.0",
   "description": "Starter project for Adobe Helix",
+  "type": "module",
   "scripts": {
+    "aemUp": "aem up",
     "lint:js": "eslint .",
     "lint:css": "stylelint blocks/**/*.css styles/*.css",
-    "lint": "npm run lint:js && npm run lint:css"
+    "lint": "npm run lint:js && npm run lint:css",
+    "start": "npm-run-all --parallel vite:watch aemUp",
+    "vite": "vite",
+    "vite:watch": "vite build -w",
+    "vite:build": "vite build"
   },
   "repository": {
     "type": "git",
@@ -19,11 +25,15 @@
   },
   "homepage": "https://github.com/adobe/aem-boilerplate#readme",
   "devDependencies": {
-    "@babel/eslint-parser": "7.25.1",
-    "eslint": "8.57.0",
-    "eslint-config-airbnb-base": "15.0.0",
-    "eslint-plugin-import": "2.29.1",
-    "stylelint": "16.8.2",
-    "stylelint-config-standard": "36.0.1"
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "@tsconfig/svelte": "^5.0.4",
+    "npm-run-all": "^4.1.5",
+    "svelte": "^4.2.19",
+    "svelte-check": "^4.0.5",
+    "vite": "^5.4.8"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   }
 }
