@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 import { existsSync, readdirSync } from 'fs';
 import { resolve } from 'path';
 import { config } from "./config.ts";
@@ -20,7 +19,7 @@ const getBlockNamesFromSrcFolder = (): string[] => {
 };
 
 const getTsEntry = (blockName: string): Record<string, string> | null => {
-    const tsPath = getBlockEntry(blockName, 'tsx');
+    const tsPath = getBlockEntry(blockName, 'ts');
     return tsPath !== null ? { [blockName]: tsPath } : null;
 };
 
@@ -55,9 +54,6 @@ export default defineConfig((configEnv) => {
     // }
 
     return {
-        plugins: [
-            react()
-        ],
         css: {
             devSourcemap: true,
             preprocessorOptions: {
