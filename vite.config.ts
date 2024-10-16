@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
+import react from '@vitejs/plugin-react'
 import { existsSync, readdirSync } from 'fs';
 import { resolve } from 'path';
 import { config } from "./config.ts";
@@ -20,7 +20,7 @@ const getBlockNamesFromSrcFolder = (): string[] => {
 };
 
 const getTsEntry = (blockName: string): Record<string, string> | null => {
-    const tsPath = getBlockEntry(blockName, 'ts');
+    const tsPath = getBlockEntry(blockName, 'tsx');
     return tsPath !== null ? { [blockName]: tsPath } : null;
 };
 
@@ -56,11 +56,7 @@ export default defineConfig((configEnv) => {
 
     return {
         plugins: [
-            svelte({
-                compilerOptions: {
-                    hydratable: true
-                },
-            })
+            react()
         ],
         css: {
             devSourcemap: true,
@@ -85,8 +81,8 @@ export default defineConfig((configEnv) => {
         },
         build: {
             sourcemap: true,
-            minify: true,
-            cssMinify: true,
+            // minify: false,
+            // cssMinify: false,
             commonjsOptions: {
                 include: ['node_modules/**'],
             },
