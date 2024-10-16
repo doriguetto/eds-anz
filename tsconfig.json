@@ -34,7 +34,7 @@
       "Utils/*": ["./src/utils/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.json"],
+  "include": ["src/**/*.tsx", "src/**/*.json"],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }

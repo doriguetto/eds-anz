@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import { existsSync, readdirSync } from 'fs';
 import { resolve } from 'path';
 import { config } from "./config.ts";
+import { qwikVite } from '@builder.io/qwik/optimizer'
 
 const getBlockEntry = (blockName: string, fileType: string): string | null => {
     const filePath = resolve(__dirname, `src/blocks/${blockName}/${blockName}.${fileType}`);
@@ -19,7 +20,7 @@ const getBlockNamesFromSrcFolder = (): string[] => {
 };
 
 const getTsEntry = (blockName: string): Record<string, string> | null => {
-    const tsPath = getBlockEntry(blockName, 'ts');
+    const tsPath = getBlockEntry(blockName, 'tsx');
     return tsPath !== null ? { [blockName]: tsPath } : null;
 };
 
@@ -54,6 +55,14 @@ export default defineConfig((configEnv) => {
     // }
 
     return {
+        plugins: [
+            qwikVite({
+                csr: true,
+                client: {
+                    outDir: 'resources/', // This is the right setting
+                },
+            })
+        ],
         css: {
             devSourcemap: true,
             preprocessorOptions: {
@@ -77,12 +86,13 @@ export default defineConfig((configEnv) => {
         },
         build: {
             sourcemap: true,
-            // minify: false,
-            // cssMinify: false,
+            minify: false,
+            cssMinify: false,
             commonjsOptions: {
                 include: ['node_modules/**'],
             },
             emptyOutDir: true,
+            outDir: '../resources/', // This will be overrided to `dist` by qwikVite() setting
             rollupOptions: {
                 cache: false,
                 preserveEntrySignatures: 'strict',
@@ -94,8 +104,7 @@ export default defineConfig((configEnv) => {
                     },
                     chunkFileNames: '__chunks__/[name].[hash].js',
                     entryFileNames: '[name]/[name].js',
-                },
-                // plugins: [svelte()],
+                }
             },
         },
     };
