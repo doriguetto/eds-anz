@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import { existsSync, readdirSync } from 'fs';
 import { resolve } from 'path';
 import { config } from "./config.ts";
+import svgr from "vite-plugin-svgr";
 
 const getBlockEntry = (blockName: string, fileType: string): string | null => {
     const filePath = resolve(__dirname, `src/blocks/${blockName}/${blockName}.${fileType}`);
@@ -55,7 +56,8 @@ export default defineConfig((configEnv) => {
 
     return {
         plugins: [
-            react()
+            react(),
+            svgr(),
         ],
         css: {
             devSourcemap: true,
