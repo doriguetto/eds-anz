@@ -36,7 +36,7 @@ export const generateBlockEntries = () => {
 
 export default defineConfig((configEnv) => {
     // const { mainTsPath, mainScssPath, fontsScssPath, lazyStylesScssPath, sidekickLibraryStylesScssPath } = config;
-    // const { mainTsPath } = config;
+    // const { mainScssPath } = config;
     const blocksEntries = generateBlockEntries();
 
     // @ts-ignore
@@ -46,7 +46,6 @@ export default defineConfig((configEnv) => {
         ...blocksEntries,
     };
 
-    console.log(inputOptions);
 
     // if (fontsScssPath) inputOptions.fonts = resolve(__dirname, fontsScssPath);
     // if (lazyStylesScssPath) inputOptions.lazyStyles = resolve(__dirname, lazyStylesScssPath);
@@ -81,8 +80,8 @@ export default defineConfig((configEnv) => {
         },
         build: {
             sourcemap: true,
-            // minify: false,
-            // cssMinify: false,
+            minify: false,
+            cssMinify: false,
             commonjsOptions: {
                 include: ['node_modules/**'],
             },
@@ -99,7 +98,6 @@ export default defineConfig((configEnv) => {
                     chunkFileNames: '__chunks__/[name].[hash].js',
                     entryFileNames: '[name]/[name].js',
                 },
-                // plugins: [svelte()],
             },
         },
     };
