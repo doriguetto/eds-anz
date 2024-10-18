@@ -96,7 +96,7 @@ const Menu = (props: MenuProps) => {
             <div role="navigation" aria-hidden="false" className="navigation" aria-label="Primary">
                 <ul className="primary__nav clearfix">
                     <li className={`tabs-personal hasSubNav ${props.isMenuOpen ? 'open' : ''}`}>
-                        <a href="/personal/" className="primary__nav__trigger  semibold" aria-expanded="false"
+                        <a href="/personal/" className={`primary__nav__trigger ${props.isMenuOpen ? 'semibold' : ''}`} aria-expanded="false"
                            onClick={(e) => props.onMenuClick(e, props.title) }>{props.title}</a>
                         <div className="subNav" style={{display: props.isMenuOpen ? 'block' : 'none'}}>
                             <div className="subNav__content flex-container">

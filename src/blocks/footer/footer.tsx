@@ -1,15 +1,12 @@
 import {createRoot} from "react-dom/client";
 import './footer.scss';
-// import {useState} from "react";
 
-// interface Data {
-//     menus: Menu[]
-// }
 import FacebookSvg from '../../assets/facebook.svg?react'
 import LinkedInSvg from '../../assets/linkedin.svg?react';
 import InstagramSvg from '../../assets/instagram.svg?react';
 import YoutubeSvg from '../../assets/youtube.svg?react';
-import { ReactElement, ReactNode } from "react";
+import GlobeSvg from '../../assets/globe.svg?react';
+import {ReactElement, ReactNode} from "react";
 
 const SubMenu = (props: SubMenu) => {
     return (
@@ -23,14 +20,15 @@ const SubMenu = (props: SubMenu) => {
     )
 }
 
+
 const IconMenu = (props: SubMenu) => {
     return (
         <li className="linkmultifield__item linkmultifield__item--icon">
-            {/*<a className="linkmultifield__link" href={props.link}*/}
-            {/*   data-event="site-interaction" data-category="footer"*/}
-            {/*   data-description="ourcompany" data-clicktrack="ourcompany-footer">*/}
+            <a className="linkmultifield__link" href={props.link}
+               data-event="site-interaction" data-category="footer"
+               data-description="ourcompany" data-clicktrack="ourcompany-footer">
                 {props.icon}
-            {/*</a>*/}
+            </a>
         </li>
     )
 }
@@ -52,26 +50,61 @@ const Menu = (props: MenuProps) => {
     )
 }
 
-
-const Row = (props: Row) => {
-    return (
-        <div className="rowcontainer">
-            <div className="rowcontainer anz-component ">
-                <div className="grid">
-                    <div className="rowcontainer__row rowcontainer--column-4 ">
-                        {props.menus.map((menu) =>
-                            <Menu {...menu}>
-                                <>
-                                    {menu.subMenus.map((subMenu) =>
+const MenuRow = (props: Row) => {
+    return <div className="rowcontainer">
+        <div className="rowcontainer anz-component ">
+            <div className="grid">
+                <div className="rowcontainer__row rowcontainer--column-4 ">
+                    {props.menus.map((menu) =>
+                        <Menu {...menu}>
+                            <>
+                                {menu.subMenus &&
+                                    menu.subMenus.map((subMenu) =>
                                         !!subMenu.icon ?
                                             <IconMenu {...subMenu}/> :
                                             <SubMenu {...subMenu}/>
                                     )}
-                                </>
-                            </Menu>
-                        )}
-                    </div>
+                            </>
+                        </Menu>
+                    )}
                 </div>
+            </div>
+        </div>
+    </div>
+}
+
+const LinkRow = (props: Row) => {
+    return (
+        <div className="rowcontainer__row">
+            <div className="grid">
+                <div className="footer__tertiarylinks">
+                   <span className="countrypicker">
+                       <a className="countrypicker__link" href="/personal/regions/" data-event="site-interaction"
+                          data-category="footer" data-description="australia" data-clicktrack="australia-footer">
+                           <span className="countrypicker__icon">
+                                <GlobeSvg/>
+                            </span>
+                           Australia<span className="icon icon_arrow_right"></span>
+                       </a>
+                   </span>
+                    <ul className="nostyle tertiarylinks__list">
+                        {props.menus.map((menu) =>
+                            <li className="tertiarylinks__item">
+                                <a href={menu.link} className="tertiarylink" data-event="site-interaction"
+                                   data-category="footer" data-description="privacy"
+                                   data-clicktrack="privacy-footer">
+                                    {menu.title}
+                                </a>
+                            </li>
+                        )}
+                    </ul>
+                </div>
+                {props.text ?
+                    <div className="footer__tertiarytext">
+                       <p dangerouslySetInnerHTML={{ __html : props.text }}/>
+                    </div> :
+                    null
+                }
             </div>
         </div>
     )
@@ -80,12 +113,17 @@ const Row = (props: Row) => {
 const Footer = (props: Data) => {
     return (
         <>
-            {props.rows.map((row) => <Row {...row}/>)}
+            {props.rows.map((row) =>
+                row.type === 'menu' ?
+                    <MenuRow {...row}/> :
+                    <LinkRow {...row}/>)}
         </>
-    );
+    )
 }
 
 type Row = {
+    type: 'menu' | 'links';
+    text?: string;
     menus: Menu[]
 }
 type Data = {
@@ -95,7 +133,7 @@ type Data = {
 type Menu = {
     title: string;
     link: string;
-    subMenus: SubMenu[]
+    subMenus?: SubMenu[]
 }
 
 type MenuProps = Menu & {
@@ -109,10 +147,10 @@ type SubMenu = {
 }
 
 export default function decorate(block: HTMLDivElement) {
-
     const footerData: Data = {
         rows: [
             {
+                type: 'menu',
                 menus: [
                     {
                         title: "About us",
@@ -164,6 +202,7 @@ export default function decorate(block: HTMLDivElement) {
                 ],
             },
             {
+                type: 'menu',
                 menus: [
                     {
                         title: "Connect with us",
@@ -183,6 +222,29 @@ export default function decorate(block: HTMLDivElement) {
                         ]
                     },
                 ]
+            },
+            {
+                type: 'links',
+                text: "© Australia and New Zealand Banking Group Limited (ANZ)   <span class=\"text--nowrap\">ABN 11 005 357 522.</span>",
+                menus: [
+                    {
+                        title: 'Privacy',
+                        link: '/privacy/centre/',
+                    },
+                    {
+                        title: 'Website terms of use',
+                        link: '/privacy/centre/',
+                    },
+                    {
+                        title: 'Sitemap',
+                        link: '/privacy/centre/',
+                    },
+                    {
+                        title: 'Help',
+                        link: '/privacy/centre/',
+                    },
+                ]
+
             }
         ]
     }

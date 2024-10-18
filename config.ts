@@ -1,6 +1,6 @@
 export interface Config {
   // mainTsPath: string;
-  // mainScssPath: string;
+  mainScssPath: string;
   // iconsDirPath: string;
   // iconsTypesPath: string;
   // fontsScssPath?: string;
@@ -14,7 +14,7 @@ export interface Config {
 
 export const config: Config = {
   // mainTsPath: './src/main.ts',
-  // mainScssPath: './src/styles/sass/main.scss',
+  mainScssPath: './src/styles/sass/main.scss',
   // iconsDirPath: './public/icons',
   // iconsTypesPath: './src/types/icons.types.ts',
   // fontsScssPath: './src/styles/sass/fonts.scss',

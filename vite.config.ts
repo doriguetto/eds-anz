@@ -37,13 +37,13 @@ export const generateBlockEntries = () => {
 
 export default defineConfig((configEnv) => {
     // const { mainTsPath, mainScssPath, fontsScssPath, lazyStylesScssPath, sidekickLibraryStylesScssPath } = config;
-    // const { mainScssPath } = config;
+    const { mainScssPath } = config;
     const blocksEntries = generateBlockEntries();
 
     // @ts-ignore
     const inputOptions: InputOption = {
         // main: resolve(__dirname, mainTsPath),
-        // styles: resolve(__dirname, mainScssPath),
+        styles: resolve(__dirname, mainScssPath),
         ...blocksEntries,
     };
 
