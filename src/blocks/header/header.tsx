@@ -4,7 +4,13 @@ import {useState} from "react";
 
 
 const Header = (props: Data) => {
-
+    const [menuOpen, setMenuOpen] = useState('')
+    const onClick = (e: any, menu: string) => {
+        e.preventDefault();
+        e.stopPropagation();
+        debugger
+        setMenuOpen(menuOpen === menu? '' : menu)
+    }
     return (
         <div className="primary grid clearfix">
             <a href="#" className="logo logo--authored logo--default" title="ANZ Logo">
@@ -14,7 +20,10 @@ const Header = (props: Data) => {
                     alt="ANZ logo"></img>
             </a>
             {props.menus.map((menu: Menu) =>
-                <Menu {...menu}/>
+                <Menu
+                    onMenuClick={onClick}
+                    isMenuOpen={menuOpen === menu.title}
+                    {...menu} />
             )}
         </div>
     )
@@ -80,22 +89,16 @@ const Promo = () => {
     )
 }
 
-const Menu = (props: Menu) => {
-    const [isOpen, setOpen] = useState(false)
-    const onClick = (e: any) => {
-        e.preventDefault();
-        e.stopPropagation();
-        setOpen(!isOpen)
-    }
+const Menu = (props: MenuProps) => {
 
     return (
         <div className="desktop-menu clearfix" aria-hidden="false">
             <div role="navigation" aria-hidden="false" className="navigation" aria-label="Primary">
                 <ul className="primary__nav clearfix">
-                    <li className={`tabs-personal hasSubNav ${isOpen ? 'open' : ''}`}>
+                    <li className={`tabs-personal hasSubNav ${props.isMenuOpen ? 'open' : ''}`}>
                         <a href="/personal/" className="primary__nav__trigger  semibold" aria-expanded="false"
-                           onClick={onClick}>{props.title}</a>
-                        <div className="subNav" style={{display: isOpen ? 'block' : 'none'}}>
+                           onClick={(e) => props.onMenuClick(e, props.title) }>{props.title}</a>
+                        <div className="subNav" style={{display: props.isMenuOpen ? 'block' : 'none'}}>
                             <div className="subNav__content flex-container">
                                 <div className="subNav__content__menu">
                                     <ul className="subNav__content__menu__items clearfix">
@@ -130,11 +133,16 @@ type SubMenu = {
     icon: string
 }
 
+type MenuProps = Menu & {
+    onMenuClick: (e: any, menu: string) => void
+    isMenuOpen: boolean
+}
+
 type Menu = {
     href: string,
     title: string,
     description: string,
-    submenus: SubMenu[]
+    submenus: SubMenu[],
 }
 
 type Data = {
@@ -156,7 +164,6 @@ export default function decorate(block: HTMLDivElement) {
                         description: 'Everyday/savings & term deposits',
                         icon: 'bank-accounts'
                     },
-
                     {
                         href: '/personal/credit-cards',
                         title: 'Credit cards',
@@ -174,7 +181,25 @@ export default function decorate(block: HTMLDivElement) {
                         title: 'Personal loans',
                         description: 'Debt consolidation, buying a new or used car, renovations and more',
                         icon: 'personal-loans'
-                    }
+                    },
+                    {
+                        href: '/personal/insurance',
+                        title: 'Insurance',
+                        description: 'Get on top of your home, life, income and car insurance',
+                        icon: 'insurance'
+                    },
+                    {
+                        href: '/personal/superannuation',
+                        title: 'Superannuation and retirement',
+                        description: 'Superannuation and retirement options',
+                        icon: 'investing-super'
+                    },
+                    {
+                        href: '/personal/international-travel',
+                        title: 'International travel',
+                        description: 'Foreign exchange, travel insurance, travel money card & international payments',
+                        icon: 'foreignfx'
+                    },
                 ]
 
             },
@@ -183,7 +208,48 @@ export default function decorate(block: HTMLDivElement) {
                 title: 'Business',
                 description: '',
                 submenus: [
-
+                    {
+                        href: '/personal/bank_accounts',
+                        title: 'Bank accounts',
+                        description: 'Everyday/savings & term deposits',
+                        icon: 'bank-accounts'
+                    },
+                    {
+                        href: '/personal/credit-cards',
+                        title: 'Credit cards',
+                        description: 'Low interest rate, rewards frequent flyer & platinum',
+                        icon: 'card'
+                    },
+                    {
+                        href: '/personal/home-loans',
+                        title: 'Home loans',
+                        description: 'Buying, refinancing & investing in property',
+                        icon: 'home-loans'
+                    },
+                    {
+                        href: '/personal/personal-loans',
+                        title: 'Personal loans',
+                        description: 'Debt consolidation, buying a new or used car, renovations and more',
+                        icon: 'personal-loans'
+                    },
+                    {
+                        href: '/personal/insurance',
+                        title: 'Insurance',
+                        description: 'Get on top of your home, life, income and car insurance',
+                        icon: 'insurance'
+                    },
+                    {
+                        href: '/personal/superannuation',
+                        title: 'Superannuation and retirement',
+                        description: 'Superannuation and retirement options',
+                        icon: 'investing-super'
+                    },
+                    {
+                        href: '/personal/international-travel',
+                        title: 'International travel',
+                        description: 'Foreign exchange, travel insurance, travel money card & international payments',
+                        icon: 'foreignfx'
+                    },
                 ]
 
             },
@@ -192,6 +258,48 @@ export default function decorate(block: HTMLDivElement) {
                 title: 'Institutional',
                 description: '',
                 submenus: [
+                    {
+                        href: '/personal/bank_accounts',
+                        title: 'Bank accounts',
+                        description: 'Everyday/savings & term deposits',
+                        icon: 'bank-accounts'
+                    },
+                    {
+                        href: '/personal/credit-cards',
+                        title: 'Credit cards',
+                        description: 'Low interest rate, rewards frequent flyer & platinum',
+                        icon: 'card'
+                    },
+                    {
+                        href: '/personal/home-loans',
+                        title: 'Home loans',
+                        description: 'Buying, refinancing & investing in property',
+                        icon: 'home-loans'
+                    },
+                    {
+                        href: '/personal/personal-loans',
+                        title: 'Personal loans',
+                        description: 'Debt consolidation, buying a new or used car, renovations and more',
+                        icon: 'personal-loans'
+                    },
+                    {
+                        href: '/personal/insurance',
+                        title: 'Insurance',
+                        description: 'Get on top of your home, life, income and car insurance',
+                        icon: 'insurance'
+                    },
+                    {
+                        href: '/personal/superannuation',
+                        title: 'Superannuation and retirement',
+                        description: 'Superannuation and retirement options',
+                        icon: 'investing-super'
+                    },
+                    {
+                        href: '/personal/international-travel',
+                        title: 'International travel',
+                        description: 'Foreign exchange, travel insurance, travel money card & international payments',
+                        icon: 'foreignfx'
+                    },
                 ]
             },
             {
@@ -199,6 +307,48 @@ export default function decorate(block: HTMLDivElement) {
                 title: 'Learn',
                 description: '',
                 submenus: [
+                    {
+                        href: '/personal/bank_accounts',
+                        title: 'Bank accounts',
+                        description: 'Everyday/savings & term deposits',
+                        icon: 'bank-accounts'
+                    },
+                    {
+                        href: '/personal/credit-cards',
+                        title: 'Credit cards',
+                        description: 'Low interest rate, rewards frequent flyer & platinum',
+                        icon: 'card'
+                    },
+                    {
+                        href: '/personal/home-loans',
+                        title: 'Home loans',
+                        description: 'Buying, refinancing & investing in property',
+                        icon: 'home-loans'
+                    },
+                    {
+                        href: '/personal/personal-loans',
+                        title: 'Personal loans',
+                        description: 'Debt consolidation, buying a new or used car, renovations and more',
+                        icon: 'personal-loans'
+                    },
+                    {
+                        href: '/personal/insurance',
+                        title: 'Insurance',
+                        description: 'Get on top of your home, life, income and car insurance',
+                        icon: 'insurance'
+                    },
+                    {
+                        href: '/personal/superannuation',
+                        title: 'Superannuation and retirement',
+                        description: 'Superannuation and retirement options',
+                        icon: 'investing-super'
+                    },
+                    {
+                        href: '/personal/international-travel',
+                        title: 'International travel',
+                        description: 'Foreign exchange, travel insurance, travel money card & international payments',
+                        icon: 'foreignfx'
+                    },
                 ]
             }
         ]
