@@ -82,8 +82,8 @@ export default defineConfig((configEnv) => {
         },
         build: {
             sourcemap: true,
-            minify: false,
-            cssMinify: false,
+            minify: true,
+            cssMinify: true,
             commonjsOptions: {
                 include: ['node_modules/**'],
             },
