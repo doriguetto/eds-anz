@@ -61,18 +61,18 @@ const Hero = (props: Data) => {
                                                         <div className="text parbase">
                                                             <h1 className="alpha "><span className="text--white">Make life happen with an ANZ Personal Loan</span>
                                                             </h1>
-                                                            <p style={{paddingTop: '10.0px'}}>New car? Trip of a lifetime?
+                                                            <p>New car? Trip of a lifetime?
                                                                 Fairy-tale wedding? Whatever it is you’ve got your heart
                                                                 set on,
                                                                 an ANZ Personal Loan could help you get there.</p>
-                                                            <p style={{paddingTop: '10.0px'}}><a
+                                                            <p><a
                                                                 href="/personal/personal-loans/?pid=pel-hb-td-hp-08-23-acq-pllifehappen"
                                                                 className="btn btn--white" >Visit ANZ
                                                                 Personal Loans</a></p>
                                                             <p className="paragraph-text--small"><span
                                                                 className="text--white">All credit applications are subject to ANZ’s credit assessment criteria. T&amp;Cs, fees and charges apply.</span>
                                                             </p>
-                                                            <p style={{paddingTop: '10.0px'}}>&nbsp;</p></div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
