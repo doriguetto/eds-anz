@@ -1,6 +1,7 @@
 /* stylelint-disable max-line-length */
 
 @font-face {
+  font-display: swap;
   font-family: myriad-pro;
   font-style: normal;
   font-weight: 200;
@@ -8,6 +9,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: myriad-pro;
   font-style: italic;
   font-weight: 200;
@@ -15,6 +17,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: myriad-pro;
   font-style: normal;
   font-weight: 400;
@@ -22,6 +25,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: myriad-pro;
   font-style: italic;
   font-weight: 400;
@@ -29,6 +33,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: myriad-pro;
   font-style: normal;
   font-weight: 600;
@@ -36,6 +41,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: myriad-pro;
   font-style: italic;
   font-weight: 600;
@@ -43,6 +49,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: anz-icons;
   src: url(../fonts/anz-icons.woff) format("woff");
   font-weight: 400;

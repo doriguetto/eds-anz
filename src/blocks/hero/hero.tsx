@@ -43,13 +43,13 @@ const Hero = (props: Data) => {
                                                         <a href="/locations/"
                                                            className="extra__link locator"
                                                         style={{color: '#fff'}}>
-                                                            <span className="icon icon_poi"></span>
+                                                            {/*<span className="icon icon_poi"></span>*/}
                                                             Find ANZ
                                                         </a>
                                                         <a href="https://www.anz.com.au/support/"
                                                            className="extra__link contact-us"
                                                            style={{color: '#fff'}}>
-                                                        <span className="icon icon_laptop"></span>
+                                                        {/*<span className="icon icon_laptop"></span>*/}
                                                             Support Centre
                                                         </a>
                                                     </div>
