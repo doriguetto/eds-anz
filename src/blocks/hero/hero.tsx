@@ -18,18 +18,25 @@ const Hero = (props: Data) => {
                                                     {/*{props.img && <div className="focuspoint" data-focus-x="0.241"*/}
                                                     {/*     data-focus-y="0.048"*/}
                                                     {/*     data-image-w="2560" data-image-h="1000">*/}
-                                                    {/*    <div dangerouslySetInnerHTML={{__html: props.img.outerHTML}}>*/}
+                                                    {/*    <div dangerouslySetInnerHTML={{__html: props.img.outerHTML}}*/}
+                                                    {/*         style={{*/}
+                                                    {/*             width: 'auto',*/}
+                                                    {/*             top: '-28.2276%',*/}
+                                                    {/*             left: '0px',*/}
+                                                    {/*             maxWidth: '100%',*/}
+                                                    {/*             position: 'absolute',*/}
+                                                    {/*         }}>*/}
                                                     {/*    </div>*/}
                                                     {/*</div>}*/}
-                                                    <img alt="woman sitting above the trolley"
-                                                         src="/public/1728455091015.jpg"
-                                                         style={{
-                                                             width: 'auto',
-                                                             top: '-28.2276%',
-                                                             left: '0px',
-                                                             maxWidth: '100%',
-                                                             position: 'absolute',
-                                                         }}/>
+                                                    {/*<img alt="woman sitting above the trolley"*/}
+                                                    {/*     src="/public/1728455091015.jpg"*/}
+                                                    {/*     style={{*/}
+                                                    {/*         width: 'auto',*/}
+                                                    {/*         top: '-28.2276%',*/}
+                                                    {/*         left: '0px',*/}
+                                                    {/*         maxWidth: '100%',*/}
+                                                    {/*         position: 'absolute',*/}
+                                                    {/*     }}/>*/}
                                                 </div>
                                                 <div className="hero__breadcrumb grid" style={{width: '1164px'}}>
                                                     <div className="extra">
@@ -91,5 +98,4 @@ export default function decorate(block: HTMLDivElement) {
         img
     }
     createRoot(block).render(<Hero {...heroData}/>)
-    debugger
 }
