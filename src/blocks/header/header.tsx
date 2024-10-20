@@ -1,6 +1,7 @@
 import {createRoot} from "react-dom/client";
 import {useState} from "react";
 import { loadFragment } from '../../utils';
+import './header.scss'
 
 const Header = (props: Data) => {
     const [menuOpen, setMenuOpen] = useState('')
