@@ -460,7 +460,6 @@ function decorateSections(main) {
     wrappers.forEach((wrapper) => section.append(wrapper));
     section.classList.add('section');
     section.dataset.sectionStatus = 'initialized';
-    debugger
     section.style.display = 'none';
 
     // Process section metadata
@@ -671,7 +670,6 @@ async function loadSection(section, loadCallback) {
     }
     if (loadCallback) await loadCallback(section);
     section.dataset.sectionStatus = 'loaded';
-    debugger
     section.style.display = null;
   }
 }
