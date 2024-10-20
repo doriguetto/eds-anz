@@ -19,12 +19,12 @@ const Hero = (props: Data) => {
                                         <div className="hero hero--fivefourthree-logon hero--stack-columns hero--product padding-bottom--10px padding-top--10px">
                                             <div className="hero__default">
                                                 <div className="hero-frame">
-                                                    {props.img && <div className="focuspoint" data-focus-x="0.241"
-                                                         data-focus-y="0.048"
-                                                         data-image-w="2560" data-image-h="1000">
-                                                        <div dangerouslySetInnerHTML={{__html: props.img.outerHTML}}>
-                                                        </div>
-                                                    </div>}
+                                                    {/*{props.img && <div className="focuspoint" data-focus-x="0.241"*/}
+                                                    {/*     data-focus-y="0.048"*/}
+                                                    {/*     data-image-w="2560" data-image-h="1000">*/}
+                                                    {/*    <div dangerouslySetInnerHTML={{__html: props.img.outerHTML}}>*/}
+                                                    {/*    </div>*/}
+                                                    {/*</div>}*/}
                                                     {/*<div className="focuspoint" data-focus-x="0.241"*/}
                                                     {/*     data-focus-y="0.048"*/}
                                                     {/*     data-image-w="2560" data-image-h="1000">*/}
