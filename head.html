@@ -1,4 +1,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <script src="/scripts/aem.js" type="module"></script>
 <script src="/scripts/scripts.js" type="module"></script>
-<link rel="stylesheet" href="/styles/styles.css"/>
+<link rel="stylesheet" href="/blocks/styles/styles.css"/>
+<script>
+    let cls = 0;
+    new PerformanceObserver((entryList) => {
+        for (const entry of entryList.getEntries()) {
+            if (!entry.hadRecentInput) {
+                cls += entry.value;
+                console.log('Current CLS value:', cls, entry);
+            }
+        }
+    }).observe({type: 'layout-shift', buffered: true});
+</script>

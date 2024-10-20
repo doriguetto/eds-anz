@@ -8,7 +8,6 @@ const Header = (props: Data) => {
     const onClick = (e: any, menu: string) => {
         e.preventDefault();
         e.stopPropagation();
-        debugger
         setMenuOpen(menuOpen === menu? '' : menu)
     }
     return (
