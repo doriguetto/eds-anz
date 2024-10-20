@@ -649,13 +649,24 @@ img[src$='.svg'] {
 .hero.padding-top--15px {
   padding-top: 0
 }
-.hero-container {
-  background-color: #007dba;
-}
+//.hero-container {
+//  background-color: #007dba;
+//}
 
 .hero {
   min-height: 456px;
 }
+
 .hero--container {
   padding-top: 69px;
+}
+.hero-frame {
+  height: 750px;
+}
+
+.focuspoint img {
+  width: auto;
+  top: -7.9476%;
+  left: 0px;
+  max-width: 100%;
 }

@@ -1,7 +1,11 @@
 import {createRoot} from "react-dom/client";
 import './hero.scss';
+import {useEffect} from "react";
 
 const Hero = (props: Data) => {
+    useEffect(() => {
+
+    }, []);
     return (
         <div className="hero--container">
             <div className="hero--control">
@@ -15,19 +19,12 @@ const Hero = (props: Data) => {
                                         <div className="hero hero--fivefourthree-logon hero--stack-columns hero--product padding-bottom--10px padding-top--10px">
                                             <div className="hero__default">
                                                 <div className="hero-frame">
-                                                    {/*{props.img && <div className="focuspoint" data-focus-x="0.241"*/}
-                                                    {/*     data-focus-y="0.048"*/}
-                                                    {/*     data-image-w="2560" data-image-h="1000">*/}
-                                                    {/*    <div dangerouslySetInnerHTML={{__html: props.img.outerHTML}}*/}
-                                                    {/*         style={{*/}
-                                                    {/*             width: 'auto',*/}
-                                                    {/*             top: '-28.2276%',*/}
-                                                    {/*             left: '0px',*/}
-                                                    {/*             maxWidth: '100%',*/}
-                                                    {/*             position: 'absolute',*/}
-                                                    {/*         }}>*/}
-                                                    {/*    </div>*/}
-                                                    {/*</div>}*/}
+                                                    {props.img && <div className="focuspoint" data-focus-x="0.241"
+                                                         data-focus-y="0.048"
+                                                         data-image-w="2560" data-image-h="1000">
+                                                        <div dangerouslySetInnerHTML={{__html: props.img.outerHTML}}>
+                                                        </div>
+                                                    </div>}
                                                     {/*<div className="focuspoint" data-focus-x="0.241"*/}
                                                     {/*     data-focus-y="0.048"*/}
                                                     {/*     data-image-w="2560" data-image-h="1000">*/}
@@ -104,5 +101,6 @@ export default function decorate(block: HTMLDivElement) {
     }
     // debugger
     createRoot(block).render(<Hero {...heroData}/>)
+    block.textContent = '';
     // debugger
 }
