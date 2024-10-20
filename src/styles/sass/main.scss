@@ -4695,6 +4695,9 @@ header .primary .login-button.open + .login-list {
   transition: opacity .25s ease-out
 }
 
-[data-section-status="loading"] {
+main > div {
   display: none;
+}
+main > div[data-section-status="loaded"] {
+  display: block;
 }
