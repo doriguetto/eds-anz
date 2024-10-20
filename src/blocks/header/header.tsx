@@ -1,6 +1,6 @@
 import {createRoot} from "react-dom/client";
 import {useState} from "react";
-
+import { loadFragment } from '../../utils';
 
 const Header = (props: Data) => {
     const [menuOpen, setMenuOpen] = useState('')
@@ -11,12 +11,11 @@ const Header = (props: Data) => {
     }
     return (
         <div className="primary grid clearfix">
-            <a href="#" className="logo logo--authored logo--default" title="ANZ Logo">
-                <img
-                    src="/public/logo-promo-anz-small.png"
-                    role="presentation"
-                    alt="ANZ logo"></img>
-            </a>
+            {props.image &&
+                <a href="#" className="logo logo--authored logo--default" title="ANZ Logo">
+                    <span dangerouslySetInnerHTML={{__html: props.image.outerHTML}}></span>
+                </a>
+            }
             {props.menus.map((menu: Menu) =>
                 <Menu
                     onMenuClick={onClick}
@@ -145,11 +144,16 @@ type Menu = {
 
 type Data = {
     menus: Menu[]
+    image?: Element | null
 }
 
-export default function decorate(block: HTMLDivElement) {
+export default async function decorate(block: HTMLDivElement) {
+
+    const navPath = `${window.location.href}nav`;
+    const fragment = await loadFragment(navPath);
 
     const data: Data = {
+        image: fragment?.children[0].querySelector('picture'),
         menus: [
             {
                 href: '/personal/',
