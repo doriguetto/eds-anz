@@ -2,7 +2,7 @@ import {createRoot} from "react-dom/client";
 import './hero.scss';
 import {useEffect} from "react";
 
-const Hero = (props: Data) => {
+const Hero = () => {
     useEffect(() => {
 
     }, []);
@@ -29,7 +29,7 @@ const Hero = (props: Data) => {
                                                          data-focus-y="0.048"
                                                          data-image-w="2560" data-image-h="1000">
                                                     <img alt="woman sitting above the trolley"
-                                                         src="/public/1728455091015.jpg"
+                                                         src="/public/1728455091015.webp"
                                                         />
                                                     </div>
                                                 </div>
@@ -84,17 +84,17 @@ const Hero = (props: Data) => {
 
 }
 
-type Data = {
-    img: HTMLPictureElement | null
-}
+// type Data = {
+//     img: HTMLPictureElement | null
+// }
 
 export default function decorate(block: HTMLDivElement) {
-    const img = block.querySelector('picture');
-    const heroData: Data = {
-        img
-    }
+    // const img = block.querySelector('picture');
+    // const heroData: Data = {
+    //     img
+    // }
     // debugger
-    createRoot(block).render(<Hero {...heroData}/>)
+    createRoot(block).render(<Hero/>)
     block.textContent = '';
     // debugger
 }

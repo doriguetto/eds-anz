@@ -1,5 +1,4 @@
 import {createRoot} from "react-dom/client";
-import './header.scss';
 import {useState} from "react";
 
 
