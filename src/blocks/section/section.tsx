@@ -7,7 +7,7 @@ const BadgeWithCardSection = (props: SectionData) => {
 
     const innerSections = props?.innerSections;
     const badgeData: BadgeData = {
-        icon: innerSections && innerSections[0].children[0],
+        icon: innerSections && innerSections[0].children[0].querySelector('picture'),
         content: innerSections && innerSections[0].children[2]
     }
     const cardData: CardData = {
