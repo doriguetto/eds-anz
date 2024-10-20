@@ -55,7 +55,6 @@ export default defineConfig((configEnv) => {
     // }
 
     return {
-        base: "/blocks/",
         plugins: [
             react(),
             svgr(),
