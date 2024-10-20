@@ -1,18 +1,2 @@
-export default function decorate(block) {
-  const cols = [...block.firstElementChild.children];
-  block.classList.add(`columns-${cols.length}-cols`);
-
-  // setup image columns
-  [...block.children].forEach((row) => {
-    [...row.children].forEach((col) => {
-      const pic = col.querySelector('picture');
-      if (pic) {
-        const picWrapper = pic.closest('div');
-        if (picWrapper && picWrapper.children.length === 1) {
-          // picture is only content in column
-          picWrapper.classList.add('columns-img-col');
-        }
-      }
-    });
-  });
-}
+import{c,j as e}from"../__chunks__/client.Dzuxdzeo.js";const i=n=>e.jsx("div",{className:"columns2",children:e.jsx("div",{className:"container  container--three box--white padding-top--50px padding-bottom--30px container--four-columns",children:e.jsx("div",{className:"grid ",children:e.jsx("div",{className:"    clearfix",children:e.jsx("div",{className:"container__items container__main",children:e.jsx("div",{className:"aem__component clearfix",children:n.columns&&Array.from(n.columns).map((a,s)=>e.jsx("div",{className:"container__item container__main__element     none",children:e.jsx("div",{dangerouslySetInnerHTML:{__html:a.outerHTML}})},s))})})})})})});function o(n){var r;const s={columns:(r=n.firstElementChild)==null?void 0:r.querySelectorAll("div")};c(n).render(e.jsx(i,{...s}))}export{o as default};
+//# sourceMappingURL=columns.js.map

@@ -1,0 +1,1646 @@
+{
+  "environment": {
+    "mode": "publish",
+    "analytics": "true",
+    "analyticsTitle": "Compare tool - Credit cards"
+  },
+  "hideAllProductImage": "false",
+  "products": [
+    {
+      "identifier": "nab-low-rate-card",
+      "productId": "/content/dam/nab/content-fragments/products/personal/credit-cards/nab-low-rate-card/low-rate-card",
+      "name": "NAB Low Rate Card",
+      "description": "Enjoy our promotional balance transfer offer for 28 months.",
+      "hideDescription": "false",
+      "image": "/content/dam/nabrwd/personal/banking/images/nab-low-rate-card.png",
+      "specialOffers": [
+        {
+          "name": "Promotional 0% p.a. balance transfer (BT) for 28 months with 2% BT fee. Enjoy no annual fee for the first year (usually $59).",
+          "specialOfferOtherDetailList": [
+            {
+              "description": "Minimum monthly repayments required. NAB may vary or end this offer at any time. See important information below.",
+              "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-low-rate-card-balance-transfer-offer"
+            }
+          ],
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-low-rate-card-balance-transfer-offer"
+          ]
+        }
+      ],
+      "disclaimers": [],
+      "callToActions": [
+        {
+          "label": "Find out more",
+          "altText": "Find out more",
+          "link": "/content/nabrwd/en/personal/credit-cards/nab-low-rate-card",
+          "mobileAppLink": "",
+          "type": "Learn More"
+        },
+        {
+          "label": "Apply now",
+          "altText": "Apply now",
+          "link": "/content/nabrwd/en/personal/credit-cards/nab-low-rate-card-checklist",
+          "mobileAppLink": "",
+          "type": "Apply Now"
+        }
+      ],
+      "features": [
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/accepted-worldwide"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/online-security"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/low-rates-and-fees"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/fraud-protection"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/emergency-assistance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/additional-cardholder"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/contactless-payments"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/visa-entertainment"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/our-lowest-interest-rate-on-purchases"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/up-to-55-interest-free-days-on-purchases"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/1000-minimum-credit-limit"
+        }
+      ],
+      "categories": [
+        "2"
+      ],
+      "ratesAndFees": [
+        {
+          "id": "nab-rate-type:credit-card/purchase",
+          "value": "13.49% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/variable-cash-advance-rate-current-as-at-date"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/cash-advance",
+          "value": "21.74% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/cash-advance-rate"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer",
+          "value": "0% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-low-rate-card-balance-transfer-offer",
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/existing-customer-offers",
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/btl-balance-transfers-indicative-list"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer-fee-rate",
+          "value": "2% ",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer-rate-offer",
+          "value": "0% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-low-rate-card-balance-transfer-offer"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/purchase-rate-offer",
+          "value": "0% p.a.",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-rate-type:credit-card/minimum-repayment",
+          "value": "2% p.a.",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card",
+          "value": "59$ ",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-low-rate-card-balance-transfer-offer"
+          ],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "0$ ",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-low-rate-card-balance-transfer-offer"
+          ],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "0$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "30$ ",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-low-rate-card-balance-transfer-offer"
+          ],
+          "description": ""
+        },
+        {
+          "id": "Interest free days",
+          "value": "Up to 55",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/interest-free-days-on-purchases"
+          ]
+        },
+        {
+          "id": "Minimum credit limit",
+          "value": "1000"
+        }
+      ],
+      "rewardPoints": []
+    },
+    {
+      "identifier": "nab-rewards-signature-card",
+      "productId": "/content/dam/nab/content-fragments/products/personal/credit-cards/nab-rewards-signature-card/rewards-signature-card",
+      "name": "NAB Rewards Signature Card",
+      "description": "Our highest NAB Rewards Points earn rate with premium services and &lt;a href=\"/content/nabrwd/en/personal/insurance/complimentary-card-insurances.html\">complimentary insurances&lt;/a>",
+      "hideDescription": "false",
+      "image": "/content/dam/nabrwd/personal/banking/images/nab-rewards-signature-card.png",
+      "specialOffers": [
+        {
+          "name": "180,000 bonus NAB Rewards Points",
+          "specialOfferOtherDetailList": [
+            {
+              "description": "&lt;strong>130,000 bonus points&lt;/strong>&amp;nbsp;when you spend $3,000 on everyday purchases within the first 60 days of account opening and &lt;strong>50,000 bonus points&lt;/strong> when you keep your card for over 12 months. That’s enough for $880 in gift cards.",
+              "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-rewards-signature-card/standard-atl-excl-rewards-bonus-points-offer"
+            },
+            {
+              "description": "Minimum monthly repayments required. NAB may vary or end this offer at any time. See important information below.",
+              "disclaimerId": ""
+            }
+          ],
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-rewards-signature-card/standard-atl-excl-rewards-bonus-points-offer"
+          ]
+        }
+      ],
+      "disclaimers": [
+        "/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards",
+        "/content/dam/nab/content-fragments/disclaimer/mobile-phone-insurance-aig",
+        "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-rewards-signature-card/our-highest-nab-rewards-points-earn-rate"
+      ],
+      "callToActions": [
+        {
+          "label": "Find out more",
+          "altText": "Find out more",
+          "link": "/content/nabrwd/en/personal/credit-cards/nab-rewards-cards/signature-card",
+          "mobileAppLink": "",
+          "type": "Learn More"
+        },
+        {
+          "label": "Apply now",
+          "altText": "Apply now",
+          "link": "/content/nabrwd/en/personal/credit-cards/nab-rewards-cards/signature-card-checklist",
+          "mobileAppLink": "",
+          "type": "Apply Now"
+        }
+      ],
+      "features": [
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/accepted-worldwide"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/purchase-protection-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/online-security"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/interstate-flight-inconvenience-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/nab-concierge-service"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/extended-warranty-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/fraud-protection"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/domestic-hotel-burglary-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/price-protection-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/transport-accident-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/rewards"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/premium-cards"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/emergency-assistance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/additional-cardholder"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/contactless-payments"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/visa-entertainment"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/complimentary-insurances"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/earn-up-to-3-75-nab-rewards-points-per-1"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/uncapped-points-earn"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/15k-minimum-credit-limit"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/overseas-travel-insurance-new"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/special-offers-with-visa-premium-access"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/0-p-a-on-balance-transfers"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/spend-fee-waiver"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/fee-free-international-transactions"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/complimentary-delayed-flight-lounge-pass"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/complimentary-mobile-phone-insurance"
+        }
+      ],
+      "rewardsProgram": "NAB Rewards",
+      "categories": [
+        "3"
+      ],
+      "ratesAndFees": [
+        {
+          "id": "nab-rate-type:credit-card/purchase",
+          "value": "20.99% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/variable-cash-advance-rate-current-as-at-date"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer",
+          "value": "0% p.a.",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-rate-type:credit-card/cash-advance",
+          "value": "21.74% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/cash-advance-rate"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer-fee-rate",
+          "value": "3% ",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-rate-type:credit-card/minimum-repayment",
+          "value": "2% p.a.",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "295$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "145$ ",
+          "disclaimers": [],
+          "description": "Annual card fee offer $195"
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "0$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "195$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "145$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/monthly-card-fee",
+          "value": "24$ ",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-rewards-signature-card/spend-fee-waiver"
+          ],
+          "description": ""
+        },
+        {
+          "id": "Interest free days",
+          "value": "Up to 44",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/interest-free-days-on-purchases"
+          ]
+        },
+        {
+          "id": "Minimum credit limit",
+          "value": "15000"
+        }
+      ],
+      "rewardPoints": [
+        {
+          "point": "Earn 1.5 NAB Rewards Points",
+          "description": "for every $1 spend on everyday purchases up to $15,000 spend in a Rewards Statement period (calendar month), then 0.5 NAB Rewards Points per $1 spend, uncapped.",
+          "disclaimer": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/rewards-signature-card-bonus-earning-points-and-points-booster"
+        },
+        {
+          "point": "Earn 3 NAB Rewards Points",
+          "description": "per $1 spend with Webjet, regardless of total spend in a Rewards Statement period (calendar month).",
+          "disclaimer": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/rewards-signature-card-bonus-earning-points-and-points-booster"
+        }
+      ]
+    },
+    {
+      "identifier": "nab-low-fee-card",
+      "productId": "/content/dam/nab/content-fragments/products/personal/credit-cards/nab-low-fee-card/low-fee-card",
+      "name": "NAB Low Fee Card",
+      "description": "A no-frills card with our lowest annual fee and access to special offers, complimentary purchase protection insurance&amp;nbsp;and fraud protection.",
+      "hideDescription": "false",
+      "image": "/content/dam/nabrwd/personal/banking/credit-cards/credit-card-selector/images/nab-low-fee-card.png",
+      "specialOffers": [
+        {
+          "name": "Enjoy $200 cashback",
+          "specialOfferOtherDetailList": [
+            {
+              "description": "$200 cashback when you spend $1,500 on purchases within 90 days from account opening.",
+              "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-low-fee-card-cash-back-offer-without-offer-email"
+            },
+            {
+              "description": "&lt;span class=\"caption-text\">Purchases must be processed and charged to your account in the 90 day period from account opening to count towards the spend criteria.&lt;br> Minimum monthly repayments required. NAB may vary or end this offer at any time. See important information below.&lt;/span>",
+              "disclaimerId": ""
+            }
+          ],
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-low-fee-card-cash-back-offer-without-offer-email"
+          ]
+        }
+      ],
+      "disclaimers": [
+        "/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards"
+      ],
+      "callToActions": [
+        {
+          "label": "Apply Now",
+          "altText": "Apply Now",
+          "link": "/content/nabrwd/en/personal/credit-cards/low-fee-cards/nab-low-fee-card-checklist",
+          "mobileAppLink": "/content/nabrwd/en/personal/credit-cards/low-fee-cards/nab-low-fee-card-checklist",
+          "type": "Apply Now"
+        },
+        {
+          "label": "Find out more",
+          "altText": "Find out more",
+          "link": "/content/nabrwd/en/personal/credit-cards/low-fee-cards/nab-low-fee-card",
+          "mobileAppLink": "/content/nabrwd/en/personal/credit-cards/low-fee-cards/nab-low-fee-card",
+          "type": "Learn More"
+        }
+      ],
+      "features": [
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/accepted-worldwide"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/purchase-protection-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/online-security"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/fraud-protection"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/emergency-assistance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/additional-cardholder"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/contactless-payments"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/visa-entertainment"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/upto-44-interest-free-days-on-purchases"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/our-lowest-annual-fee-card"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/1000-minimum-credit-limit"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/0-p-a-on-balance-transfers"
+        }
+      ],
+      "categories": [
+        "1"
+      ],
+      "ratesAndFees": [
+        {
+          "id": "nab-rate-type:credit-card/purchase",
+          "value": "20.99% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/variable-cash-advance-rate-current-as-at-date"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/cash-advance",
+          "value": "21.74% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/cash-advance-rate"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer",
+          "value": "0% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/balance-transfer-standard-rate",
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/btl-balance-transfers-indicative-list"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer-fee-rate",
+          "value": "3% ",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-rate-type:credit-card/minimum-repayment",
+          "value": "2% p.a.",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card",
+          "value": "30$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "0$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "Interest free days",
+          "value": "Up to 44",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/interest-free-days-on-purchases"
+          ]
+        },
+        {
+          "id": "Minimum credit limit",
+          "value": "1000"
+        }
+      ],
+      "rewardPoints": []
+    },
+    {
+      "identifier": "nab-straightup-card",
+      "productId": "/content/dam/nab/content-fragments/products/personal/credit-cards/nab-straightup-card/straightup-card",
+      "name": "NAB StraightUp Card",
+      "description": "No interest, late payment fees or international transaction fees, just a simple monthly fee.",
+      "hideDescription": "false",
+      "image": "/content/dam/nabrwd/personal/banking/images/nab-straightup-card-sv.png",
+      "specialOffers": [],
+      "disclaimers": [],
+      "callToActions": [
+        {
+          "label": "Apply now",
+          "altText": "Apply now for a NAB StraightUp Card",
+          "link": "/content/nabrwd/en/personal/credit-cards/nab-straightup-card/application-checklist",
+          "mobileAppLink": "/content/nabrwd/en/personal/credit-cards/nab-straightup-card/application-checklist",
+          "type": "Apply Now"
+        },
+        {
+          "label": "Find out more",
+          "altText": "Find out more about the NAB StraightUp Card",
+          "link": "/content/nabrwd/en/personal/credit-cards/nab-straightup-card",
+          "mobileAppLink": "/content/nabrwd/en/personal/credit-cards/nab-straightup-card",
+          "type": "Learn More"
+        }
+      ],
+      "features": [
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/one-credit-card-for-personal"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/fixed-minimum-monthly-payments"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/simple-monthly-fee"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/no-use-no-pay"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/visa-is-accepted-anywhere"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/no-interest"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/accepted-worldwide"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/online-security"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/fraud-protection"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/emergency-assistance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/contactless-payments"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/visa-entertainment"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/no-other-charges"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/three-credit-limit-options"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/no-foreign-currency-fees"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/no-late-payment-or-international-transactional-fees"
+        }
+      ],
+      "categories": [
+        "5"
+      ],
+      "ratesAndFees": [
+        {
+          "id": "nab-fee-type:credit-card/monthly-card-fee",
+          "value": "10$ monthly",
+          "disclaimers": [],
+          "description": "- credit limits of $1,000"
+        },
+        {
+          "id": "nab-fee-type:credit-card/monthly-card-fee",
+          "value": "20$ ",
+          "disclaimers": [],
+          "description": "- credit limits up to $2,000"
+        },
+        {
+          "id": "nab-fee-type:credit-card/monthly-card-fee",
+          "value": "30$ ",
+          "disclaimers": [],
+          "description": "- credit limits up to $3,000"
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "0$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "Minimum credit limit",
+          "value": "1000"
+        }
+      ],
+      "rewardPoints": []
+    },
+    {
+      "identifier": "nab-rewards-platinum-card",
+      "productId": "/content/dam/nab/content-fragments/products/personal/credit-cards/nab-rewards-platinum-card/rewards-platinum-card",
+      "name": "NAB Rewards Platinum Card",
+      "description": "Earn NAB Rewards Points and enjoy platinum services and &lt;a href=\"/content/nabrwd/en/personal/insurance/complimentary-card-insurances.html\">complimentary insurances&lt;/a>",
+      "hideDescription": "false",
+      "image": "/content/dam/nabrwd/personal/banking/images/nab-rewards-platinum-card.png",
+      "specialOffers": [
+        {
+          "name": "100,000 bonus NAB Rewards Points",
+          "specialOfferOtherDetailList": [
+            {
+              "description": "&lt;strong>80,000 bonus points&lt;/strong> when you spend $1,000 on everyday purchases within the first 60 days of account opening and &lt;strong>20,000 bonus points&lt;/strong> when you keep your card for over 12 months. That’s enough for $480 in gift cards.",
+              "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/rewards-platinum-bonus-points-special-offer"
+            },
+            {
+              "description": "You’ll also enjoy a reduced annual card fee (from&amp;nbsp;$195 to&amp;nbsp;$45) for the first year.",
+              "disclaimerId": ""
+            },
+            {
+              "description": "&lt;span class=\"caption-text\">Minimum monthly repayments required. NAB may vary or end this offer at any time. See important information below.&lt;/span>",
+              "disclaimerId": ""
+            }
+          ],
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/rewards-platinum-bonus-points-special-offer"
+          ]
+        }
+      ],
+      "disclaimers": [
+        "/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards"
+      ],
+      "callToActions": [
+        {
+          "label": "Find out more",
+          "altText": "Find out more",
+          "link": "/content/nabrwd/en/personal/credit-cards/nab-rewards-cards/platinum-card",
+          "mobileAppLink": "",
+          "type": "Learn More"
+        },
+        {
+          "label": "Apply now",
+          "altText": "Apply now",
+          "link": "/content/nabrwd/en/personal/credit-cards/nab-rewards-cards/platinum-card-checklist",
+          "mobileAppLink": "",
+          "type": "Apply Now"
+        }
+      ],
+      "features": [
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/accepted-worldwide"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/purchase-protection-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/online-security"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/interstate-flight-inconvenience-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/nab-concierge-service"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/extended-warranty-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/fraud-protection"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/domestic-hotel-burglary-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/price-protection-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/transport-accident-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/rewards"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/emergency-assistance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/additional-cardholder"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/contactless-payments"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/visa-entertainment"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/complimentary-insurances"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/earn-up-to-3-nab-reward-points-per-1"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/uncapped-points-earn"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/6k-minimum-credit-limit"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/overseas-travel-insurance-new"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/special-offers-with-visa-premium-access"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/0-p-a-on-balance-transfers"
+        }
+      ],
+      "rewardsProgram": "NAB Rewards",
+      "categories": [
+        "3"
+      ],
+      "ratesAndFees": [
+        {
+          "id": "nab-rate-type:credit-card/purchase",
+          "value": "20.99% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/variable-cash-advance-rate-current-as-at-date"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer",
+          "value": "0% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/balance-transfer-standard-rate"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/cash-advance",
+          "value": "21.74% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/cash-advance-rate"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer-fee-rate",
+          "value": "3% ",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-rate-type:credit-card/minimum-repayment",
+          "value": "2% p.a.",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer-fee-rate",
+          "value": "2% ",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/campaigns-balance-transfer-flybuys-offer-bt-rate"
+          ]
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card",
+          "value": "195$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "45$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "0$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "95$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "95$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "95$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "95$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "45$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "95$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "Interest free days",
+          "value": "Up to 44",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/interest-free-days-on-purchases"
+          ]
+        },
+        {
+          "id": "Minimum credit limit",
+          "value": "6000"
+        }
+      ],
+      "rewardPoints": [
+        {
+          "point": "Earn 1 NAB Rewards Point",
+          "description": "for every $1 spent on everyday purchases",
+          "disclaimer": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/reward-card-bonus-earning-points-and-points-booster"
+        },
+        {
+          "point": "Earn 1.5 NAB Rewards Points",
+          "description": "for every $1 on purchases made at eligible Grocery stores",
+          "disclaimer": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/reward-card-bonus-earning-points-and-points-booster"
+        },
+        {
+          "point": "Earn 2 NAB Rewards Points",
+          "description": "for every $1 spent with Webjet",
+          "disclaimer": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/reward-card-bonus-earning-points-and-points-booster"
+        }
+      ]
+    },
+    {
+      "identifier": "nab-qantas-rewards-signature-card",
+      "productId": "/content/dam/nab/content-fragments/products/personal/credit-cards/nab-qantas-rewards-signature-card/qantas-rewards-signature-card",
+      "name": "NAB Qantas Rewards Signature Card",
+      "description": "Our highest Qantas Points earn rate with platinum services and &lt;a href=\"/content/nabrwd/en/personal/insurance/complimentary-card-insurances.html\">complimentary insurances&lt;/a>",
+      "hideDescription": "false",
+      "image": "/content/dam/nabrwd/personal/banking/images/NAB-Qantas-rewards-signature-card.png",
+      "specialOffers": [
+        {
+          "name": "120,000 bonus Qantas Points",
+          "specialOfferOtherDetailList": [
+            {
+              "description": "&lt;strong>90,000 bonus points &lt;/strong>when you spend $3,000 on everyday purchases within the first 60 days of account opening and &lt;strong>30,000 bonus points&lt;/strong> when you keep your card for over 12 months.",
+              "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/qantas-rewards-signature-bonus-points-special-offer"
+            },
+            {
+              "description": "You&#39;ll also enjoy a&amp;nbsp;reduced annual card fee (from $420 to $320)&amp;nbsp;for the first year.",
+              "disclaimerId": ""
+            },
+            {
+              "description": "&lt;span class=\"caption-text\">Minimum monthly repayments required. NAB may vary or end this offer at any time. See important information below.&lt;/span>",
+              "disclaimerId": ""
+            },
+            {
+              "description": "When you spend $3,000 on everyday purchases within the first 60 days of account opening.",
+              "disclaimerId": ""
+            }
+          ],
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/qantas-rewards-signature-bonus-points-special-offer"
+          ]
+        }
+      ],
+      "disclaimers": [
+        "/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards"
+      ],
+      "callToActions": [
+        {
+          "label": "Find out more",
+          "altText": "Find out more",
+          "link": "/content/nabrwd/en/personal/credit-cards/qantas-rewards/nab-qantas-rewards-signature-card",
+          "mobileAppLink": "",
+          "type": "Learn More"
+        },
+        {
+          "label": "Apply now",
+          "altText": "Apply now",
+          "link": "/content/nabrwd/en/personal/credit-cards/qantas-rewards/nab-qantas-rewards-signature-card-checklist",
+          "mobileAppLink": "",
+          "type": "Apply Now"
+        }
+      ],
+      "features": [
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/accepted-worldwide"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/purchase-protection-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/online-security"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/interstate-flight-inconvenience-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/nab-concierge-service"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/extended-warranty-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/fraud-protection"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/domestic-hotel-burglary-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/price-protection-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/transport-accident-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/emergency-assistance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/additional-cardholder"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/contactless-payments"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/visa-entertainment"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/complimentary-insurances"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/earn-1-qantas-point-per-1-dollar"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/join-qff-for-free"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/15k-minimum-credit-limit"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/overseas-travel-insurance-new"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/special-offers-with-visa-premium-access"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/complimentary-qantas-frequent-flyer"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/0-p-a-on-balance-transfers"
+        }
+      ],
+      "rewardsProgram": "Qantas Rewards",
+      "categories": [
+        "4"
+      ],
+      "ratesAndFees": [
+        {
+          "id": "nab-rate-type:credit-card/purchase",
+          "value": "20.99% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/variable-cash-advance-rate-current-as-at-date"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer",
+          "value": "0% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/balance-transfer-standard-rate"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/cash-advance",
+          "value": "21.74% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/cash-advance-rate"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer-fee-rate",
+          "value": "3% ",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-rate-type:credit-card/minimum-repayment",
+          "value": "2% p.a.",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer-fee-rate",
+          "value": "% ",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card",
+          "value": "420$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "320$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card",
+          "value": "420$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "0$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "320$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card",
+          "value": "320$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "Interest free days",
+          "value": "Up to 44",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/interest-free-days-on-purchases"
+          ]
+        },
+        {
+          "id": "Minimum credit limit",
+          "value": "15000"
+        }
+      ],
+      "rewardPoints": [
+        {
+          "point": "Earn 1 Qantas Point",
+          "description": "per $1 up to $5,000 on everyday purchases on your Visa Card",
+          "disclaimer": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/qantas-rewards-points"
+        },
+        {
+          "point": "Earn 0.5 Qantas Points",
+          "description": "per $1 from $5,001 to $20,000 on everyday purchases on your Visa Card",
+          "disclaimer": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/qantas-rewards-points"
+        }
+      ]
+    },
+    {
+      "identifier": "nab-qantas-rewards-premium-card",
+      "productId": "/content/dam/nab/content-fragments/products/personal/credit-cards/nab-qantas-rewards-premium-card/qantas-rewards-premium-card",
+      "name": "NAB Qantas Rewards Premium Card",
+      "description": "Earn Qantas Points and enjoy platinum services and &lt;a href=\"/content/nabrwd/en/personal/insurance/complimentary-card-insurances.html\">complimentary insurances&lt;/a>",
+      "hideDescription": "false",
+      "image": "/content/dam/nabrwd/personal/banking/images/nab-qantas-rewards-platinum.png",
+      "specialOffers": [
+        {
+          "name": "70,000 bonus Qantas Points",
+          "specialOfferOtherDetailList": [
+            {
+              "description": "&lt;strong>60,000 bonus points&lt;/strong> when you spend $2,000 on everyday purchases within the first 60 days of account opening and &lt;strong>10,000 bonus points&lt;/strong> when you keep your card for over 12 months.&lt;sup>&lt;/sup>",
+              "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/qantas-rewards-premium-bonus-points-special-offer"
+            },
+            {
+              "description": "You’ll also enjoy a reduced annual card fee (from&amp;nbsp;$295 to $195)&amp;nbsp;for the first year.",
+              "disclaimerId": ""
+            },
+            {
+              "description": "&lt;span class=\"caption-text\">Minimum monthly repayments required. NAB may vary or end this offer at any time. See important information below.&lt;/span>",
+              "disclaimerId": ""
+            }
+          ],
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/qantas-rewards-premium-bonus-points-special-offer"
+          ]
+        }
+      ],
+      "disclaimers": [
+        "/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards"
+      ],
+      "callToActions": [
+        {
+          "label": "Find out more",
+          "altText": "Find out more",
+          "link": "/content/nabrwd/en/personal/credit-cards/qantas-rewards/nab-qantas-rewards-premium-card",
+          "mobileAppLink": "",
+          "type": "Learn More"
+        },
+        {
+          "label": "Apply now",
+          "altText": "Apply now",
+          "link": "/content/nabrwd/en/personal/credit-cards/qantas-rewards/nab-qantas-rewards-premium-card-checklist",
+          "mobileAppLink": "",
+          "type": "Apply Now"
+        }
+      ],
+      "features": [
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/accepted-worldwide"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/purchase-protection-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/online-security"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/interstate-flight-inconvenience-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/nab-concierge-service"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/extended-warranty-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/fraud-protection"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/domestic-hotel-burglary-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/amex-entertainment"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/price-protection-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/transport-accident-insurance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/rewards"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/premium-cards"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/emergency-assistance"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/additional-cardholder"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/contactless-payments"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/visa-entertainment"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/complimentary-insurances"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/earn-1-qantas-point-per-1-5-dollar"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/join-qff-for-free"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/6k-minimum-credit-limit"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/overseas-travel-insurance-new"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/special-offers-with-visa-premium-access"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/complimentary-qantas-frequent-flyer"
+        },
+        {
+          "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/0-p-a-on-balance-transfers"
+        }
+      ],
+      "rewardsProgram": "Qantas Rewards",
+      "categories": [
+        "4"
+      ],
+      "ratesAndFees": [
+        {
+          "id": "nab-rate-type:credit-card/purchase",
+          "value": "20.99% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/variable-cash-advance-rate-current-as-at-date"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/cash-advance",
+          "value": "21.74% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/cash-advance-rate"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer",
+          "value": "0% p.a.",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/balance-transfer-standard-rate"
+          ]
+        },
+        {
+          "id": "nab-rate-type:credit-card/balance-transfer-fee-rate",
+          "value": "3% ",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-rate-type:credit-card/minimum-repayment",
+          "value": "2% p.a.",
+          "disclaimers": []
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card",
+          "value": "295$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card",
+          "value": "195$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "0$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card/annual-card-fee-offer",
+          "value": "195$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "nab-fee-type:credit-card",
+          "value": "195$ ",
+          "disclaimers": [],
+          "description": ""
+        },
+        {
+          "id": "Interest free days",
+          "value": "Up to 44",
+          "disclaimers": [
+            "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/interest-free-days-on-purchases"
+          ]
+        },
+        {
+          "id": "Minimum credit limit",
+          "value": "6000"
+        }
+      ],
+      "rewardPoints": [
+        {
+          "point": "Earn 1 Qantas Point",
+          "description": "per $1.5 up to $3,000 on everyday purchases on your Visa Card",
+          "disclaimer": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/qantas-rewards-points"
+        },
+        {
+          "point": "Earn 1 Qantas Points",
+          "description": "per $3 from $3,001 to $6,000 on everyday purchases on your Visa Card",
+          "disclaimer": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/qantas-rewards-points"
+        }
+      ]
+    }
+  ],
+  "disclaimers": [
+    {
+      "title": "Delayed flight lounge pass",
+      "body": "&lt;p>Complimentary Delayed Flight Lounge Passes are provided by&amp;nbsp;Collinson Insurance Services Limited (which operates the LoungeKey™ Pass program), and are available to all NAB Rewards Signature Credit cardholders (Eligible Persons).&amp;nbsp; The Delayed Flight Lounge Pass gives an Eligible Person plus up to 4 travel companions complimentary access to select airport lounges at select airport locations. Alternatively, if a lounge is unavailable, Eligible Persons can use their Delayed Flight Lounge Pass to offset a dollar amount off the total bill at select dining options. Availability of airport lounges and dining options vary based on location and affiliated LoungeKey™ Partners at the time.&amp;nbsp; Not all airports offer Delayed Flight Lounge Pass and use of Delayed Flight Lounge Pass may be restricted to certain terminals. Access to and use of the Delayed Flight Lounge Pass is subject to the &lt;a href=\"/content/dam/nab/documents/terms-and-conditions/banking/delayed-flight-lounge-pass-terms-and-conditions.pdf\" target=\"_blank\">Terms of Use (PDF, 83KB)&lt;/a> which are subject to change. You can &lt;a href=\"https://loungefinder.loungekey.com/Pass\" target=\"_blank\">search for locations and the conditions of use&lt;/a> applicable to each airport lounge/dining venue.&lt;/p>\n&lt;p>Delayed Flight Lounge Passes are not available where flights are cancelled or rescheduled to 24 hours after the flight&#39;s scheduled departure time (which will be handled by the airline directly via their own compensation process). Delayed Flight Lounge Passes are provided on a non-transferable, non-refundable and non-changeable basis. NAB is not responsible for the issue of Delayed Flight Lounge Passes, and excludes all liability for any loss or damage in connection with the issue, non-issue or use of a Delayed Flight Lounge Pass to the extent permitted by law.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-rewards-signature-card/delayed-flight-lounge-pass"
+    },
+    {
+      "title": "Qantas Points",
+      "body": "&lt;p>Qantas Points will be allocated on a tiered basis over each statement period on your NAB Qantas Rewards Premium Visa Card and NAB Qantas Rewards Signature Visa Card. Points are capped at $6,000 spend per statement period for the NAB Qantas Rewards Premium Card and $20,000 spend per statement period for the NAB Qantas Rewards Signature Card.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/qantas-rewards-points"
+    },
+    {
+      "title": "Balance transfer 12 month offer rate",
+      "body": "&lt;p>After 12 months, any unpaid balance transfers will attract the variable cash advance rate (currently&amp;nbsp;21.74% p.a. as at&amp;nbsp;today). The one-off balance transfer fee of&amp;nbsp;3% is calculated on the amount transferred and is charged to your NAB credit card account when your balance transfer is processed. &lt;a href=\"/content/nabrwd/en/personal/interest-rates-fees-and-charges/indicator-rates-for-other-personal-lending.html\" target=\"_self\">Interest rates&lt;/a> are subject to change.&amp;nbsp;While you have an outstanding balance transfer, interest free days on purchases only applies if you pay the interest free days payment in full by the due date each month. Minimum monthly repayments must be made by the due date each month. Standard balance transfer rate and term may be varied or withdrawn at any time. In addition to this acquisition rate, which is available only at card application, other balance transfer offers may be available on your card from time to time. You can find out more information about the &lt;a href=\"/content/nabrwd/en/personal/credit-cards/balance-transfers.html\" target=\"_self\">ongoing balance transfer rates&lt;/a> of your card.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/balance-transfer-standard-rate"
+    },
+    {
+      "title": "Non-NAB card balance transfer eligibility",
+      "body": "&lt;p>We can’t process balance transfers from certain issuers – see our indicative list.&lt;/p>\n&lt;p>You’ll need to make sure your BPAY reference number for your non-NAB card is the same as your non-NAB card number as we use this number to process your balance transfer request. If these numbers are not the same, we won’t be able to process your balance transfer. Please check the numbers match before applying for a new card with a balance transfer or requesting balance transfer on an existing card. Your BPAY reference number can be found on your credit card statement.&lt;br>\n&lt;/p>\n&lt;p>We are aware that some card numbers and BPAY reference numbers don’t match for cards from the following issuers:&lt;br>\n&lt;/p>\n&lt;ul>\n&lt;li>Bendigo Bank&lt;br>\n&lt;/li>\n&lt;li>ING&lt;/li>\n&lt;li>Great Southern Bank&lt;/li>\n&lt;li>Heritage Bank&lt;/li>\n&lt;li>Adelaide Bank&lt;/li>\n&lt;li>credit unions&lt;/li>\n&lt;li>AMEX cards&lt;/li>\n&lt;/ul>\n&lt;p>&lt;strong>Note:&lt;/strong> this is an indicative list.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/btl-balance-transfers-indicative-list"
+    },
+    {
+      "title": "Interest free days on purchases",
+      "body": "&lt;p>You will be eligible for interest-free days on purchases by paying your account in full or, if your statement indicates an interest-free days payment, paying that amount in full by the monthly due date. Explore more details at&amp;nbsp;&lt;a href=\"/content/nabrwd/en/personal/credit-cards/balance-transfer-interest-free-days.html\" target=\"_self\">nab.com.au/btchange&lt;/a>.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/interest-free-days-on-purchases"
+    },
+    {
+      "title": "Monthly fee waiver",
+      "body": "&lt;p>The monthly fee will be charged on the last day of your statement period each month. If you spend $5,000 or more in a statement period, your monthly fee for that statement period will be reversed. Spend includes all purchases and cash advances less any refunds or cash advance reversals. Some pending transactions may take up to 10 business days to process to your account and only transactions that are processed in that statement period will count towards the spend requirement. &lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-rewards-signature-card/spend-fee-waiver"
+    },
+    {
+      "title": "Existing customer offers",
+      "body": "&lt;p>Existing customers can access customer offers by applying for a new NAB Credit Card through the NAB app or Internet Banking whilst the offers are open. The offers are not available when closing or transferring from another NAB branded credit card account or in conjunction with other NAB credit card offers. The offers may change or end at any time.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/existing-customer-offers"
+    },
+    {
+      "title": "Our highest NAB Rewards Points earn rate",
+      "body": "&lt;p>Earn 1.5 NAB Rewards Points for every $1 spend on eligible purchases up to $15,000 in a Rewards Statement period (calendar month), then 0.5 points per dollar.&amp;nbsp; &amp;nbsp;&lt;/p>\n&lt;p>Points are earned and redeemed in accordance with the &lt;a href=\"/content/dam/nabrwd/documents/terms-and-conditions/banking/nab-rewards-terms-and-conditions.pdf\" target=\"_blank\">NAB Rewards Terms and Conditions (PDF, 167KB)&lt;/a> available at &lt;a href=\"https://rewards.nab.com.au/en/home.html\" target=\"_blank\">rewards.nab.com.au&lt;/a>. These terms describe the purchases not eligible to earn points. You must have an open and active NAB Rewards credit card account to earn points. Everyday purchases exclude transactions NAB decides are wholly or partly for gambling or gaming purposes.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-rewards-signature-card/our-highest-nab-rewards-points-earn-rate"
+    },
+    {
+      "title": "Qantas Rewards Signature Bonus Points Special Offer",
+      "body": "&lt;p>Offer commenced 11 April 2022. The 120,000 bonus Qantas Points offer is only available to members who apply for a new NAB Qantas Rewards Signature Card.&lt;/p>\n&lt;p>To be eligible for the offer, you must apply for a new personal NAB Qantas Rewards Signature Card before the offer is withdrawn, be approved, and spend $3,000 on everyday purchases within 60 days of opening your account and keep your account open for 12 months.&lt;/p>\n&lt;p>Points will be awarded on a tiered basis - 90,000 bonus Qantas Points will be awarded when you spend $3,000 on eligible purchases in the first 60 days. Bonus Qantas Points will be credited to your points balance within three months of meeting the spend criteria, and 30,000 bonus Qantas Points after 12 months, credited to your points balance within the 13th month.&lt;/p>\n&lt;p>A reduced annual card fee of $320 will be charged when the card is opened and applies for the first 12 months. You will be charged the standard $420 annual card fee in the 13th month of your card account.&amp;nbsp;&lt;/p>\n&lt;p>Everyday purchases exclude transactions NAB decides are wholly or partly for gambling or gaming purposes. NAB may vary or end this offer at any time. Offer is not available when closing or transferring from another NAB credit card account or in conjunction with any other NAB card offer.&lt;br>\n&lt;/p>\n&lt;p>This bonus Qantas Points offer is not available to existing customers who have received or are entitled to receive NAB Qantas Rewards bonus points for a new personal NAB Qantas Rewards credit card in the 18 months prior to the opening of a NAB Qantas Rewards Signature Card or NAB Qantas Rewards Premium Card. This advertised offer of bonus points is not applicable or valid in conjunction with any other advertised or promotional offer.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/qantas-rewards-signature-bonus-points-special-offer"
+    },
+    {
+      "title": "Mobile phone insurance",
+      "body": "&lt;p>Complimentary mobile phone Insurance (covering Accidental Damage and Theft to a mobile phone) is provided under a group policy issued by&amp;nbsp;AIG Australia Limited (ABN 93 004 727 753, AFSL 381 686) (AIG) to&amp;nbsp;National Australia Bank Limited (ABN 12 004 044 937, AFSL and Australian Credit Licence 230686) (NAB). Cover is available to all NAB Rewards Signature Credit cardholders (Eligible Person). Eligible Persons can claim under the Group Policy as third-party beneficiaries in accordance with section 48 of the Insurance Contracts Act 1984 (Cth). &lt;/p>\n&lt;p>If an Eligible Person wishes to claim, such claim will be subject to the eligibility criteria, terms, conditions, exclusions, limits and applicable sub-limits as further detailed in the &lt;a href=\"/content/dam/nab/documents/terms-and-conditions/banking/mobile-phone-protection-insurance-terms-and-conditions.pdf\" target=\"_blank\">terms and conditions (PDF, 145KB)&lt;/a> for such coverage which is available at&amp;nbsp;&lt;a href=\"/content/nabrwd/en/personal/insurance/complimentary-card-insurances.html\" target=\"_self\">nab.com.au/personal/insurance/complimentary-card-insurances&lt;/a>. &amp;nbsp;&amp;nbsp;&lt;/p>\n&lt;p>To be eligible for coverage Eligible Persons must have a contract with a mobile phone provider and a monthly billing arrangement using their eligible NAB card. Any advice provided by NAB about this insurance is general advice only and is not based on any consideration of an Eligible Person’s objectives, financial situation, or needs. Eligible Persons must determine whether or not it is appropriate, in light of their own circumstances, to act on this advice.&amp;nbsp;&lt;/p>\n&lt;p>AIG as product issuer is not providing any financial advice about this insurance. NAB is not the product issuer, and neither NAB or its related bodies corporate guarantee any of the benefits under this insurance cover. &amp;nbsp;&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/mobile-phone-insurance-aig"
+    },
+    {
+      "title": "Variable interest rates current as at date",
+      "body": "&lt;p>Interest rates are current as at today and are subject to change.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/variable-cash-advance-rate-current-as-at-date"
+    },
+    {
+      "title": "Insurances",
+      "body": "&lt;p>AWP Australia Pty Ltd&amp;nbsp;ABN&amp;nbsp;52 097 227 177&amp;nbsp;AFSL 245631, trading as Allianz Global Assistance (AGA), under a binder from the insurer, Allianz Australia Insurance Limited&amp;nbsp;ABN&amp;nbsp;15 000 122 850&amp;nbsp;AFSL 234708 (Allianz), has issued an insurance group policy to&amp;nbsp;National Australia Bank Limited ABN&amp;nbsp;12 004 044 937&amp;nbsp;AFSL and Australian credit licence 230686 (NAB)&amp;nbsp;which allows eligible persons to claim under it as third party beneficiaries. Access to the benefit of cover under the NAB card insurances is available to eligible NAB cardholders and other eligible third party beneficiaries by operation of s48 of the Insurance Contracts Act 1984 (Cth). Any advice on insurance is general advice only and not based on any consideration of your objectives, financial situation or needs. You must check whether or not it is appropriate, in light of your own circumstances, to act on this advice. This insurance is underwritten by Allianz. NAB is not the product issuer or insurer and neither it nor any of its related bodies corporate guarantee any of the benefits under this cover.&lt;/p>\n&lt;p>If an eligible person wishes to claim any of these benefits, they will be bound by the eligibility criteria, terms, conditions, exclusions, limits and applicable sub-limits contained in the insurance information booklet. The eligibility criteria, terms, conditions, exclusions, limits and applicable sub-limits of the group policy are set out in the &lt;a href=\"/content/dam/nab/documents/policy/insurance/nab-card-insurance-policy-information-booklet-November-2023.pdf\" target=\"_blank\">NAB Card Insurance Policy Information Booklet dated 1 November 2023 (PDF, 489KB)&lt;/a>&amp;nbsp;which may be amended from time to time. For insurable events that occurred prior to 1 November 2023, NAB Low Fee Platinum, NAB Qantas Rewards Premium, NAB Qantas Rewards Signature, NAB Rewards Platinum and NAB Rewards Signature cardholders should refer to the &lt;a href=\"/content/dam/nab/documents/policy/insurance/nab-card-insurance-policy-information-2021.pdf\" target=\"_blank\">NAB Card Insurance Policy Information Booklet dated 30 June 2022 (PDF, 662KB)&lt;/a>&amp;nbsp;and NAB Low Fee cardholders should refer to the &lt;a href=\"/content/dam/nab/documents/policy/insurance/nab-purchase-protection-insurance-booklet.pdf\" target=\"_blank\">NAB Purchase Protection Insurance Policy Information Booklet dated 30 June 2022 (PDF, 374KB)&lt;/a>.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards"
+    },
+    {
+      "title": "Additional cardholder",
+      "body": "&lt;p>Additional cardholder must be 16 years of age or older. All transactions using the additional card will be the responsibility of the primary cardholder.&lt;br>\n&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/additional-cardholder"
+    },
+    {
+      "title": "Variable cash advance rate",
+      "body": "&lt;p>Cash advances also include other transactions we consider to be the equivalent of withdrawing cash from your account.&amp;nbsp;These include most gambling transactions (such as sports betting, casino games, lottery tickets, online gambling), the purchase of travellers cheques, wire transfers or other similar substitutes for cash (such as crypto-currency).&lt;/p>\n&lt;p>If you don’t want to allow gambling transactions (including cash advances and cash transfers) on your card, you can &lt;a href=\"/content/nabrwd/en/help-support/financial-wellbeing/gambling-restriction.html\" target=\"_self\">disable them in the NAB app&lt;/a>.&lt;br>\n&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/cash-advance-rate"
+    },
+    {
+      "title": "NAB Low Fee Card cashback offer",
+      "body": "&lt;p>Offer commenced 13 February 2024. To be eligible for the offer, you must apply for a new personal NAB Low Fee Card before the offer is withdrawn, be approved, spend $1500 or more on everyday purchases within 90 days of account being open.&lt;br>\n&lt;/p>\n&lt;p>Cashback will be credited to your account within 120 days from account opening if the spend criteria is met. Purchases must be processed and charged to your account in the 90 day period from account opening to count towards the spend criteria.&lt;/p>\n&lt;p>The cashback will be referenced as a promotional rebate on your credit card statement.&lt;/p>\n&lt;p>Everyday purchases exclude transactions NAB decides are wholly or partly for gambling or gaming purposes which are treated as a cash advance. NAB may vary or end this offer at any time. Offer is not available when closing or transferring from another NAB credit card account or in conjunction with any other NAB card offer.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-low-fee-card-cash-back-offer-without-offer-email"
+    },
+    {
+      "title": "NAB Rewards Signature Card – Earning NAB Reward Points and Points Booster",
+      "body": "&lt;p>Points are earned and redeemed&amp;nbsp;in accordance with the &lt;a href=\"/content/dam/nabrwd/documents/terms-and-conditions/banking/nab-rewards-terms-and-conditions.pdf\">NAB Rewards Terms and Conditions (PDF, 167KB)&lt;/a> available at &lt;a href=\"https://rewards.nab.com.au/en/home.html\" target=\"_blank\">rewards.nab.com.au&lt;/a>. These terms describe the purchases not eligible to earn points. You must have an open and active NAB Rewards credit card account to earn points. Everyday purchases exclude transactions NAB decides are wholly or partly for gambling or gaming purposes.&lt;/p>\n&lt;p>&lt;strong>Bonus&amp;nbsp;Points with Webjet:&lt;/strong>&lt;/p>\n&lt;p>&lt;strong>When you spend under $15,000 on eligible purchases in a&amp;nbsp;Rewards Statement period (calendar month):&lt;/strong>&amp;nbsp;1.5 NAB Rewards Points + 1.5&amp;nbsp;additional NAB Rewards Points.&amp;nbsp;&amp;nbsp;&lt;/p>\n&lt;p>&lt;strong>When you spend over $15,000 on eligible purchases in a&amp;nbsp;Rewards Statement period (calendar month)&lt;/strong>: 0.5 NAB Rewards Points + 2.5&amp;nbsp;additional NAB Rewards Points.&amp;nbsp;&amp;nbsp;&lt;/p>\n&lt;p>&lt;strong>Webjet &lt;/strong>– Purchases made online with Webjet via NAB Rewards Store or on &lt;a href=\"https://www.webjet.com.au/\" title=\"https://www.webjet.com.au/\" target=\"_blank\">webjet.com.au&lt;/a>. Webjet Booking Terms and Conditions apply.&lt;/p>\n&lt;p>Points Booster is subject to the &lt;a href=\"https://rewards.nab.com.au/en/footer-page/termsncondition.html\" title=\"https://rewards.nab.com.au/en/footer-page/termsncondition.html\" target=\"_blank\">NAB Rewards Terms and Conditions&lt;/a>. Only eligible transactions under those terms and conditions earn points and&amp;nbsp;Bonus&amp;nbsp;Points.&amp;nbsp;Points are credited to your points balance after the eligible transaction is credited to your NAB Rewards credit card account: for standard points and points earned with Webjet using the NAB Rewards Signature Card - within 10 business days of processing. Details are correct as&amp;nbsp;at&amp;nbsp;12 June 2024 and are subject to change by NAB.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/rewards-signature-card-bonus-earning-points-and-points-booster"
+    },
+    {
+      "title": "NAB Rewards Platinum 100K Bonus Points Offer",
+      "body": "&lt;p>&lt;span style=\"\">Offer commenced 1 November 2023. To be eligible for the&amp;nbsp;100,000 bonus points offer, you must apply for a new personal NAB Rewards Platinum Card before the offer is withdrawn, be approved, and spend $1,000 on everyday purchases within 60 days of opening your account on your NAB Rewards Platinum Card. Points will be awarded on a tiered basis - 80,000 bonus points when you spend $1,000 on everyday purchases in the first 60 days (credited to your points balance within three months of meeting the spend criteria) and 20,000 bonus points after 12 months (credited to your points balance within the 13th month). NAB may vary or end this offer at any time.&lt;/span>&lt;/p>\n&lt;p>The reduced annual card fee of $45 will be charged at the time of card opening and applies for the first 12 months. You will be charged the standard annual card fee (currently $195) in the 13th month of your card account and annually thereafter.&lt;/p>\n&lt;p>Everyday purchases exclude transactions NAB decides are wholly or partly for gambling or gaming purposes. Points will be credited to your points balance within three months of meeting the spend criteria. This bonus points offer is not available to existing customers who have received or are entitled to receive NAB Rewards Bonus Points for a new personal NAB Rewards credit card or NAB Home Loan in the 18 months prior to the opening of a NAB Rewards Signature Card or NAB Rewards Platinum Card. Offers are not available when closing or transferring from another NAB credit card account or in conjunction with any other NAB credit card offer. Gift Card values correct as at 1 November 2023. Points values and stock levels subject to change. Check our&amp;nbsp;&lt;a href=\"https://rewards.nab.com.au/\" target=\"_blank\" style=\"background-color: rgb(255,255,255);\">reward website&lt;/a>&lt;span style=\"\">.&lt;/span>&lt;br>\n&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/rewards-platinum-bonus-points-special-offer"
+    },
+    {
+      "title": "NAB Low Rate card balance transfer 28 month offer",
+      "body": "&lt;p>Offer commenced 4 October 2023. The&amp;nbsp;0% p.a. on balance transfers for 28 months offer is for approved applicants who apply for a new personal NAB Low Rate Card before the offer is withdrawn. The special balance transfer interest rate of&amp;nbsp;0% p.a. will apply for a 28-month statement period from when the account is opened. After the 28-month period, any unpaid balance transfers will then attract the card’s variable cash advance rate (currently&amp;nbsp;21.74% p.a. as at today). The one-off balance transfer fee of 2% is calculated on the amount transferred and is charged to your NAB credit card account when your balance transfer is processed. Interest rates are subject to change and available on&amp;nbsp;&lt;a href=\"/content/nabrwd/en/personal/interest-rates-fees-and-charges/indicator-rates-for-other-personal-lending.html\" target=\"_self\">our website&lt;/a>. Minimum monthly repayments must be made by the due date each month. Offer is not available when closing or transferring from another NAB credit card account or in conjunction with any other offer.&lt;/p>\n&lt;p>No annual fee will be charged for the first year. The annual fee of&amp;nbsp;$59 will be charged in the 13th month from when the account is opened.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-low-rate-card-balance-transfer-offer"
+    },
+    {
+      "title": "NAB Rewards Platinum Card — Earning points and Points Booster",
+      "body": "&lt;p>Points are earned and redeemed in accordance with the &lt;a href=\"/content/dam/nabrwd/documents/terms-and-conditions/banking/nab-rewards-terms-and-conditions.pdf\" target=\"_blank\">NAB Rewards Terms and Conditions (PDF, 167KB)&lt;/a> available at &lt;a href=\"https://rewards.nab.com.au/en/home.html\" target=\"_blank\">rewards.nab.com.au&lt;/a>. These terms describe the purchases not eligible to earn points. You must have an open and active NAB Rewards credit card account to earn points. Everyday purchases exclude transactions NAB decides are wholly or partly for gambling or gaming purposes.&lt;br>\n&lt;/p>\n&lt;p>&lt;strong>Bonus Points at eligible Grocery stores: &lt;/strong>1 NAB Rewards Point + 0.5 additional NAB Rewards Points (Bonus Points).&lt;/p>\n&lt;p>Eligibility for additional points at Grocery stores is determined by a merchant’s Merchant Category Code (MCC). An eligible Grocery store is a merchant whose MCC is designated as 5411 Grocery stores. NAB is not responsible for designating MCCs and has no control over the same. You’re unable to get points if you use an intermediary platform such as PayPal or a delivery platform such as Uber Eats for these transactions.&lt;/p>\n&lt;p>&lt;strong>Bonus points with Webjet&lt;/strong>: 1 NAB Rewards Point + 1 additional NAB Rewards Point (Bonus Points).&lt;/p>\n&lt;p>Purchases made online with Webjet via NAB Rewards Store or on &lt;a href=\"https://www.webjet.com.au/\" target=\"_blank\">Webjet.com.au&lt;/a>. Webjet Booking Terms and Conditions apply.&lt;/p>\n&lt;p>Points Booster is subject to the &lt;a href=\"https://rewards.nab.com.au/en/footer-page/termsncondition.html\" target=\"external\">NAB Rewards Terms and Conditions&lt;/a>.&amp;nbsp;Only eligible transactions under those terms and conditions earn points and bonus points. Points are credited to your points balance after the eligible transaction is credited to your NAB Rewards credit card account: for standard points within 10 business days of processing and for Bonus Points within 3 business days of the standard points being processed. Details are correct as at 18 April 2024 and are subject to change by NAB.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/reward-card-bonus-earning-points-and-points-booster"
+    },
+    {
+      "title": "Qantas Rewards Premium Bonus Points Offer",
+      "body": "&lt;p>Offer commenced 4 October 2023. To be eligible for the 70,000 bonus points offer, you must apply for a new NAB Qantas Rewards Premium Card, before the offer is withdrawn, be approved, and spend $2,000 on everyday purchases within 60 days of opening your account and keep your account open for 12 months. NAB may vary or end this offer at any time.&lt;/p>\n&lt;p>Points will be awarded on a tiered basis - 60,000 bonus Qantas Points will be awarded when you spend $2,000 on eligible purchases in the first 60 days. Bonus Qantas Points will be credited to your points balance within three months of meeting the spend criteria, and 10,000 bonus Qantas Points after 12 months, credited to your points balance within the 13th month.&lt;/p>\n&lt;p>Everyday purchases exclude transactions NAB decides are wholly or partly for gambling or gaming purchases. Offer is not available when closing or transferring from another NAB credit card account or in conjunction with any other NAB offer. Points will be credited to your points balance within 3 months of meeting the spend criteria.&lt;/p>\n&lt;p>This bonus points offer is not available to existing customers who have received or are entitled to receive NAB Qantas Rewards Bonus Points for a new personal NAB Qantas Rewards credit card in the 18 months prior to the opening of a NAB Qantas Rewards Signature Card or a NAB Qantas Rewards Premium Card (increased from 12 months prior to the opening for accounts opened before 30 November 2022). This advertised offer of bonus points is not applicable or valid in conjunction with any other advertised or promotional offer.&lt;/p>\n&lt;p>A reduced annual card fee of $195 will be charged when the card is opened and applies for the first 12 months. You will be charged the standard $295 annual card fee in the 13th month of your card account.&amp;nbsp;&amp;nbsp;&lt;br>\n&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/qantas-rewards-premium-bonus-points-special-offer"
+    },
+    {
+      "title": "NAB Rewards Signature bonus points offer",
+      "body": "&lt;p>Offer commenced 12 June 2024. Receive up to 180,000 bonus points by applying whilst the offer is open, are approved for a NAB Rewards Signature Card, spend $3,000 on everyday purchases within the first 60 days and keep your card open for 12 months. The offer provides a tiered bonus point system - receive 130,000 points after meeting the initial spend criteria (awarded within three months of meeting the spend criteria) and an additional 50,000 points after 12 months (awarded within the 13th month). Note that the offer may change or end at any time.&lt;/p>\n&lt;p>Everyday purchases exclude transactions NAB decides are ineligible, including BPAY, gambling transactions and cash advances, more details can be found &lt;a href=\"https://rewards.nab.com.au/en/footer-page/termsncondition.html\" target=\"_blank\">here&lt;/a>. This offer isn’t available to existing customers who received NAB Rewards Bonus Points in the last 18 months for a new personal NAB Rewards credit card, or when closing or transferring from another NAB branded credit card account, or in conjunction with other NAB credit card offers.&lt;/p>\n&lt;p>Discover more details on our &lt;a href=\"https://rewards.nab.com.au/\" target=\"_blank\">rewards website&lt;/a>.&lt;br>\n&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-rewards-signature-card/standard-atl-excl-rewards-bonus-points-offer"
+    },
+    {
+      "title": "NAB Concierge Service",
+      "body": "&lt;p>This service is provided by Visa Worldwide Pty Ltd or International SOS (Australasia) Pty Ltd. Your concierge is available on &lt;a href=\"tel:1300730213\">1300 730 213&lt;/a>, 24 hours a day, 7 days a week. See the &lt;a href=\"/content/dam/nabrwd/documents/terms-and-conditions/services/nab-concierge-services.pdf\" target=\"_blank\">NAB Concierge Service terms and conditions (PDF, 240KB)&lt;/a>&amp;nbsp;for full details.&lt;br>\n&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-concierge-service"
+    }
+  ],
+  "genericDisclaimers": [
+    {
+      "title": "Variable interest rates current as at date",
+      "body": "&lt;p>Interest rates are current as at today and are subject to change.&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/variable-cash-advance-rate-current-as-at-date"
+    },
+    {
+      "title": "Forms and links",
+      "body": "&lt;p>&lt;a href=\"/content/nabrwd/en/personal/credit-cards/terms-conditions.html\" target=\"_self\">NAB Credit Card Terms and Conditions&lt;/a>&lt;/p>\n&lt;p>&lt;a href=\"/content/nabrwd/en/personal/credit-cards/terms-conditions/card-based-electronic-banking.html\" target=\"_self\">NAB Electronic Banking (card based) terms and conditions&lt;/a>&lt;/p>\n&lt;p>&lt;a href=\"/content/dam/nabrwd/documents/pds/insurance/nab-credit-card-cover-pds.pdf\" target=\"_blank\">NAB Credit Card Cover Product disclosure statement and policy document (PDF, 471KB)&lt;/a>&lt;/p>\n&lt;p>&lt;a href=\"/content/nabrwd/en/personal/credit-cards/fees-charges.html\" target=\"_self\">Credit card fees and charges&lt;/a>&lt;/p>\n&lt;p>&lt;a href=\"/content/nabrwd/en/personal/interest-rates-fees-and-charges/indicator-rates-for-other-personal-lending.html\" target=\"_self\">Indicator rates for other personal lending products&lt;/a>&lt;/p>\n",
+      "id": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/forms-and-links"
+    }
+  ],
+  "productCategories": [
+    {
+      "name": "No interest card",
+      "description": "A simple and easy to understand credit card with exciting new benefits.",
+      "id": "5"
+    },
+    {
+      "name": "Low fee credit card",
+      "description": "Pay less on annual card fees and spend more on what&#39;s important to you.",
+      "id": "1"
+    },
+    {
+      "name": "Low rate credit card",
+      "description": "More financial flexibility and peace of mind with our lowest interest rate card.",
+      "id": "2"
+    },
+    {
+      "name": "NAB Rewards credit cards",
+      "description": "Earn NAB Rewards Points and redeem with travel, gift cards, homewares and more.",
+      "id": "3"
+    },
+    {
+      "name": "NAB Qantas Rewards credit cards",
+      "description": "Earn Qantas Points",
+      "id": "4"
+    }
+  ],
+  "dataCategories": [
+    {
+      "category": "Special Offers",
+      "featureList": [
+        {
+          "id": "Special Offers",
+          "title": "Special offers"
+        }
+      ]
+    },
+    {
+      "category": "Card Details",
+      &
+      #
+      #
+      34
+      ;
+      featureList
+      ":[{"
+      id
+      ":"
+      nab-fee-type: credit-card/annual-card
+      ","
+      title
+      ":"
+      Card
+      fee
+      "},{"
+      id
+      ":"
+      nab-rate-type: credit-card/purchase
+      ","
+      title
+      ":"
+      Variable
+      purchase
+      rate
+      "},{"
+      id
+      ":"
+      nab-rate-type: credit-card/cash-advance
+      ","
+      title
+      ":"
+      Variable
+      cash
+      advance
+      rate
+      "},{"
+      id
+      ":"
+      Interest
+      free
+      days
+      ","
+      title
+      ":"
+      Interest
+      free
+      days
+      on
+      purchases
+      "},{"
+      id
+      ":"
+      Minimum
+      credit
+      limit
+      ","
+      title
+      ":"
+      "}]},{"
+      category
+      ":"
+      Rewards
+      ","
+      featureList
+      ":[{"
+      id
+      ":"
+      Rewards
+      Points
+      ","
+      title
+      ":"
+      Rewards
+      points
+      "}]},{"
+      category
+      ":"
+      Insurances
+      ","
+      featureList
+      ":[{"
+      id
+      ":"
+      /content/dam/nab/content-fragments/features/personal/credit-cards/overseas-travel-insurance-new
+      ","
+      label
+      ":"
+      &
+      lt
+      ;
+      p>Overseas
+      Travel
+      Insurance
+      &
+      lt
+      ;
+      sup
+      data-disclaimer-path=
+      \
+      "/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards\" data-disclaimer-title-pref=\"show\" data-cf-variant=\"master\">&lt;noscript>\n&lt;a href=\"#disclaimer-component-content\">*&lt;/a>&lt;/noscript>\n&lt;/sup>&lt;/p>\n",
+      "icon": "",
+      "title": "International travel insurance",
+      "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards"
+    },
+    {
+      "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/interstate-flight-inconvenience-insurance",
+      "label": "&lt;p>Interstate flight inconvenience insurance&lt;sup data-disclaimer-path=\"/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards\" data-disclaimer-title-pref=\"show\" data-cf-variant=\"master\">&lt;noscript>\n&lt;a href=\"#disclaimer-component-content\">*&lt;/a>&lt;/noscript>\n&lt;/sup>&lt;/p>\n",
+      "icon": "",
+      "title": "Domestic travel insurance",
+      "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards"
+    },
+    {
+      "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/domestic-hotel-burglary-insurance",
+      "label": "&lt;p>Domestic Hotel Burglary Insurance&lt;sup data-disclaimer-path=\"/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards\" data-disclaimer-title-pref=\"show\" data-cf-variant=\"master\">&lt;noscript>\n&lt;a href=\"#disclaimer-component-content\">*&lt;/a>&lt;/noscript>\n&lt;/sup>&lt;/p>\n",
+      "icon": "",
+      "title": "Rental vehicle excess insurance in Australia",
+      "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards"
+    },
+    {
+      "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/extended-warranty-insurance",
+      "label": "&lt;p>Extended Warranty Insurance&lt;sup data-disclaimer-path=\"/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards\" data-disclaimer-title-pref=\"show\" data-cf-variant=\"master\">&lt;noscript>\n&lt;a href=\"#disclaimer-component-content\">*&lt;/a>&lt;/noscript>\n&lt;/sup>&lt;/p>\n",
+      "icon": "",
+      "title": "Extended warranty insurance",
+      "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards"
+    },
+    {
+      "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/purchase-protection-insurance",
+      "label": "&lt;p>Purchase Protection Insurance on personal items for loss, theft, or accidental damage&lt;sup data-disclaimer-path=\"/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards\" data-disclaimer-title-pref=\"show\" data-cf-variant=\"master\">&lt;noscript>\n&lt;a href=\"#disclaimer-component-content\">*&lt;/a>&lt;/noscript>\n&lt;/sup>&lt;/p>\n",
+      "icon": "",
+      "title": "Purchase protection insurance on personal items for loss, theft, or accidental damage",
+      "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/complimentary-card-insurances-all-credit-cards"
+    },
+    {
+      "id": "/content/dam/nab/content-fragments/features/personal/credit-cards/complimentary-mobile-phone-insurance",
+      "label": "&lt;p>Complimentary mobile phone insurance&lt;sup data-disclaimer-path=\"/content/dam/nab/content-fragments/disclaimer/mobile-phone-insurance-aig\" data-disclaimer-title-pref=\"show\" data-cf-variant=\"master\">&lt;noscript>\n&lt;a href=\"#disclaimer-component-content\">*&lt;/a>&lt;/noscript>\n&lt;/sup>&lt;/p>\n",
+      "icon": "",
+      "title": "Mobile phone Insurance",
+      "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/mobile-phone-insurance-aig"
+    }
+  ]
+},{"category": "Lifestyle and entertainment benefits", "featureList":[
+{"id": "/content/dam/nab/content-fragments/features/personal/credit-cards/nab-concierge-service", "label": "&lt;p>NAB Concierge Service&lt;sup data-disclaimer-path=\"/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-concierge-service\" data-disclaimer-title-pref=\"show\" data-cf-variant=\"master\">&lt;noscript>\n&lt;a href=\"#disclaimer-component-content\">*&lt;/a>&lt;/noscript>\n&lt;/sup>&lt;/p>\n", "icon": "", "title": "NAB Platinum concierge services", "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-concierge-service"}, {"id": "/content/dam/nab/content-fragments/features/personal/credit-cards/visa-entertainment", "label": "&lt;p>Special offers with &lt;a href=\"https://www.visa.com.au/en_au/visa-offers-and-perks/\" target=\"_blank\">Visa Entertainment&lt;/a> including pre-sale tickets and member promotions&lt;/p>\n", "icon": "", "title": "Special offers with Visa Entertainment", "disclaimerId": ""}, {"id": "/content/dam/nab/content-fragments/features/personal/credit-cards/complimentary-delayed-flight-lounge-pass", "label": "&lt;p>Complimentary delayed flight lounge pass&lt;sup data-disclaimer-path=\"/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-rewards-signature-card/delayed-flight-lounge-pass\" data-disclaimer-title-pref=\"show\" data-cf-variant=\"master\">&lt;noscript>\n&lt;a href=\"#disclaimer-component-content\">*&lt;/a>&lt;/noscript>\n&lt;/sup>&lt;/p>\n", "icon": "", "title": "Delayed flight lounge pass", "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/nab-rewards-signature-card/delayed-flight-lounge-pass"}
+]}, {"category": "Security", "featureList":[{"id": "/content/dam/nab/content-fragments/features/personal/credit-cards/fraud-protection", "label": "&lt;p>Fraud and theft protection with world class security technologies&lt;/p>\n", "icon": "", "title": "Fraud and theft protection with world class security technologies", "disclaimerId": ""}, {"id": "/content/dam/nab/content-fragments/features/personal/credit-cards/online-security", "label": "&lt;p>Extra verification for online purchases&lt;/p>\n", "icon": "", "title": "Extra verification for online purchases", "disclaimerId": ""}, {"id": "/content/dam/nab/content-fragments/features/personal/credit-cards/emergency-assistance", "label": "&lt;p>Global assistance for card emergencies&lt;/p>\n", "icon": "", "title": "Global assistance for card emergencies", "disclaimerId": ""}]}, {"category": "Using your card", "featureList":[
+{"id": "/content/dam/nab/content-fragments/features/personal/credit-cards/contactless-payments", "label": "&lt;p>Contactless payments&lt;/p>\n", "icon": "", "title": "Contactless payments", "disclaimerId": ""}, {"id": "/content/dam/nab/content-fragments/features/personal/credit-cards/accepted-worldwide", "label": "&lt;p>Accepted Worldwide&lt;/p>\n", "icon": "", "title": "Accepted worldwide", "disclaimerId": ""}, {"id": "/content/dam/nab/content-fragments/features/personal/credit-cards/additional-cardholder", "label": "&lt;p>Add an additional cardholder at no extra cost&amp;nbsp;&lt;sup data-disclaimer-path=\"/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/additional-cardholder\" data-disclaimer-title-pref=\"show\" data-cf-variant=\"master\">&lt;noscript>\n&lt;a href=\"#disclaimer-component-content\">*&lt;/a>&lt;/noscript>\n&lt;/sup>&lt;/p>\n", "icon": "", "title": "Add an additional cardholder at no extra cost", "disclaimerId": "/content/dam/nab/content-fragments/disclaimer/personal/credit-cards/additional-cardholder"}
+]}], "moreInfoLinks":[{"icon": "CardIcon", "label": "See all our credit cards", "path": "/content/nabrwd/en/personal/credit-cards"}]
+}
