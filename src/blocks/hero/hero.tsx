@@ -28,32 +28,32 @@ const Hero = (props: Data) => {
                                                     {/*         }}>*/}
                                                     {/*    </div>*/}
                                                     {/*</div>}*/}
-                                                    <div className="focuspoint" data-focus-x="0.241"
-                                                         data-focus-y="0.048"
-                                                         data-image-w="2560" data-image-h="1000">
-                                                    <img alt="woman sitting above the trolley"
-                                                         src="/public/1728455091015.jpg"
-                                                         style={{
-                                                             width: 'auto',
-                                                             top: '-28.2276%',
-                                                             left: '0px',
-                                                             maxWidth: '100%',
-                                                             position: 'absolute',
-                                                         }}/>
-                                                    </div>
+                                                    {/*<div className="focuspoint" data-focus-x="0.241"*/}
+                                                    {/*     data-focus-y="0.048"*/}
+                                                    {/*     data-image-w="2560" data-image-h="1000">*/}
+                                                    {/*<img alt="woman sitting above the trolley"*/}
+                                                    {/*     src="/public/1728455091015.jpg"*/}
+                                                    {/*     style={{*/}
+                                                    {/*         width: 'auto',*/}
+                                                    {/*         top: '-28.2276%',*/}
+                                                    {/*         left: '0px',*/}
+                                                    {/*         maxWidth: '100%',*/}
+                                                    {/*         position: 'absolute',*/}
+                                                    {/*     }}/>*/}
+                                                    {/*</div>*/}
                                                 </div>
                                                 <div className="hero__breadcrumb grid" style={{width: '1164px'}}>
                                                     <div className="extra">
                                                         <a href="/locations/"
                                                            className="extra__link locator"
                                                         style={{color: '#fff'}}>
-                                                            <span className="icon icon_poi"></span>
+                                                            {/*<span className="icon icon_poi"></span>*/}
                                                             Find ANZ
                                                         </a>
                                                         <a href="https://www.anz.com.au/support/"
                                                            className="extra__link contact-us"
                                                            style={{color: '#fff'}}>
-                                                        <span className="icon icon_laptop"></span>
+                                                        {/*<span className="icon icon_laptop"></span>*/}
                                                             Support Centre
                                                         </a>
                                                     </div>
