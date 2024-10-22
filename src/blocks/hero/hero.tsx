@@ -1,6 +1,7 @@
 import {createRoot} from "react-dom/client";
 import './hero.scss';
 import {createOptimizedPicture} from "../../utils";
+import ImagePreloader, {ImagePreloaderProps} from "./image.tsx";
 
 const Hero = (props: HeroData) => {
 
@@ -21,8 +22,8 @@ const Hero = (props: HeroData) => {
                                                     {props.img &&
                                                         <div className="focuspoint" data-focus-x="0.241"
                                                              data-focus-y="0.048"
-                                                             data-image-w="2560" data-image-h="1000"
-                                                             dangerouslySetInnerHTML={{__html: props.img.outerHTML}}>
+                                                             data-image-w="2560" data-image-h="1000">
+                                                            <ImagePreloader {...props.img}/>
                                                         </div>
                                                     }
                                                 </div>
@@ -79,19 +80,23 @@ const Hero = (props: HeroData) => {
 }
 
 type HeroData = {
-    img?: HTMLPictureElement | null
+    img?: ImagePreloaderProps
 }
 
 export default function decorate(block: HTMLDivElement) {
     const pictureEl = block.querySelector('picture');
     let img;
     if (pictureEl) {
-        img = createOptimizedPicture(pictureEl, true, [
-            {media: '(max-width: 800px)', width: '350'},
-            {media: '(max-width: 1140px)', width: '1150'},
-            {media: '(max-width: 3000px)', width: '1593'},
-            {width: '2048'}
-        ])
+        img = {
+            pictureEl,
+            eager: true,
+            breakpoints: [
+                {media: '(max-width: 800px)', width: '350'},
+                {media: '(max-width: 1140px)', width: '1150'},
+                {media: '(max-width: 3000px)', width: '1593'},
+                {width: '2048'}
+            ]
+        }
     }
     const heroData: HeroData = {
         img
