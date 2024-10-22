@@ -1,8 +1,14 @@
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 
 export type ImageBreakpoint = {
     media?: string;
     width: string;
+};
+
+export type ImageSource = {
+    type: string;
+    srcSet: string;
+    media?: string;
 };
 
 export type ImagePreloaderProps = {
@@ -12,7 +18,7 @@ export type ImagePreloaderProps = {
 };
 
 const ImagePreloader = ({ breakpoints = [], eager = false, pictureEl }: ImagePreloaderProps) => {
-
+    const [sources, setSources] = useState<ImageSource[]>([]);
     if (!pictureEl) return null;
     const img = pictureEl.querySelector('img')
     const imgElSrc = img?.getAttribute('src')
@@ -24,25 +30,31 @@ const ImagePreloader = ({ breakpoints = [], eager = false, pictureEl }: ImagePre
 
     const url = new URL(imgElSrc, window.location.href);
     const { pathname } = url;
-    const ext = pathname.substring(pathname.lastIndexOf('.') + 1);
+    // const ext = pathname.substring(pathname.lastIndexOf('.') + 1);
     const imgSrc = `${pathname}?width=2048&amp;format=jpeg&amp;optimize=medium`
 
-    const sources = breakpoints.map((breakpoint) => {
-        return {
-            type: 'image/webp',
-            srcSet: `${pathname}?width=${breakpoint.width}&format=webply&optimize=medium`,
-            media: breakpoint.media
-        }
-    });
 
     useEffect(() => {
         const reactImg = new Image()
-        reactImg.src = `${pathname}?format=${ext}&optimize=medium`;
+        reactImg.src = imgSrc;
+
+        const imgBreakpoints = breakpoints.map((breakpoint) => {
+            const srcSet = `${pathname}?width=${breakpoint.width}&format=webply&optimize=medium`
+            const reactImg = new Image()
+            reactImg.src = srcSet;
+            return {
+                type: 'image/webp',
+                srcSet: srcSet,
+                media: breakpoint.media
+            }
+        })
+
+        setSources(imgBreakpoints)
     }, []);
 
     return (
         <>
-            <link rel="preload" as="image" href={imgSrc}></link>
+            {/*<link rel="preload" as="image" href={imgSrc}></link>*/}
             <picture>
                 {sources.map((source, index) => (
                     <>
