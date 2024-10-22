@@ -1,3 +1,4 @@
+import {useEffect, useState} from "react";
 
 export type ImageBreakpoint = {
     media?: string;
@@ -17,7 +18,7 @@ export type ImagePreloaderProps = {
 };
 
 const ImagePreloader = ({breakpoints = [], eager = false, pictureEl}: ImagePreloaderProps) => {
-    // const [sources, setSources] = useState<ImageSource[]>([]);
+    const [sources, setSources] = useState<ImageSource[]>([]);
     if (!pictureEl) return null;
     const img = pictureEl.querySelector('img')
     const imgElSrc = img?.getAttribute('src')
@@ -33,23 +34,21 @@ const ImagePreloader = ({breakpoints = [], eager = false, pictureEl}: ImagePrelo
     const imgSrc = `${pathname}?width=2048&amp;format=jpeg&amp;optimize=medium`
 
 
-    // useEffect(() => {
-    //     const reactImg = new Image()
-    //     reactImg.src = imgSrc;
-
-    const sources = breakpoints.map((breakpoint) => {
-        const srcSet = `${pathname}?width=${breakpoint.width}&format=webply&optimize=medium`
+    useEffect(() => {
         const reactImg = new Image()
-        reactImg.src = srcSet;
-        return {
-            type: 'image/webp',
-            srcSet: srcSet,
-            media: breakpoint.media
-        }
-    })
-    //
-    //     setSources(imgBreakpoints)
-    // }, []);
+        reactImg.src = imgSrc;
+
+        setSources(breakpoints.map((breakpoint) => {
+            const srcSet = `${pathname}?width=${breakpoint.width}&format=webply&optimize=medium`
+            const reactImg = new Image()
+            reactImg.src = srcSet;
+            return {
+                type: 'image/webp',
+                srcSet: srcSet,
+                media: breakpoint.media
+            }
+        }))
+    }, []);
 
     return (
         <>
@@ -59,7 +58,8 @@ const ImagePreloader = ({breakpoints = [], eager = false, pictureEl}: ImagePrelo
                         <link rel="preload" as="image" href={source.srcSet} key={index}></link>
                     ))}
                     <link rel="preload" as="image" href={imgSrc}></link>
-                </>)
+                </>
+            )
             }
             <picture>
                 {sources.map((source, index) => (
