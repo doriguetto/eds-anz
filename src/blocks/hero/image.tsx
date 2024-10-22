@@ -15,9 +15,10 @@ export type ImagePreloaderProps = {
     breakpoints?: ImageBreakpoint[];
     pictureEl: HTMLPictureElement | null | undefined,
     lazy?: boolean;
+    preload?: boolean;
 };
 
-const ImagePreloader = ({breakpoints = [], lazy = false, pictureEl}: ImagePreloaderProps) => {
+const ImagePreloader = ({breakpoints = [], lazy = false, preload = false, pictureEl}: ImagePreloaderProps) => {
     const [sources, setSources] = useState<ImageSource[]>([]);
     if (!pictureEl) return null;
     const img = pictureEl.querySelector('img')
@@ -35,13 +36,13 @@ const ImagePreloader = ({breakpoints = [], lazy = false, pictureEl}: ImagePreloa
 
 
     useEffect(() => {
-        if (lazy) {
+        if (preload) {
             const reactImg = new Image()
             reactImg.src = imgSrc;
         }
         setSources(breakpoints.map((breakpoint) => {
             const srcSet = `${pathname}?width=${breakpoint.width}&format=webply&optimize=medium`
-            if (lazy) {
+            if (preload) {
                 const reactImg = new Image()
                 reactImg.src = srcSet;
             }
@@ -55,15 +56,14 @@ const ImagePreloader = ({breakpoints = [], lazy = false, pictureEl}: ImagePreloa
 
     return (
         <>
-            {lazy && (
-                <>
-                    {sources.map((source, index) => (
-                        <link rel="preload" as="image" href={source.srcSet} key={index}></link>
-                    ))}
-                    <link rel="preload" as="image" href={imgSrc}></link>
-                </>
-            )
-            }
+            {/*{lazy && (*/}
+            {/*    <>*/}
+            {/*        {sources.map((source, index) => (*/}
+            {/*            <link rel="preload" as="image" href={source.srcSet} key={index}></link>*/}
+            {/*        ))}*/}
+            {/*        <link rel="preload" as="image" href={imgSrc}></link>*/}
+            {/*    </>*/}
+            {/*)}*/}
             <picture>
                 {sources.map((source, index) => (
                     <>

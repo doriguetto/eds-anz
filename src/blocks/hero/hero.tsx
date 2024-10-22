@@ -88,7 +88,7 @@ export default function decorate(block: HTMLDivElement) {
     if (pictureEl) {
         img = {
             pictureEl,
-            lazy: true,
+            preload: true,
             breakpoints: [
                 {media: '(max-width: 800px)', width: '350'},
                 {media: '(max-width: 1140px)', width: '1150'},
