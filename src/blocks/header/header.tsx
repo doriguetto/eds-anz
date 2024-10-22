@@ -2,6 +2,7 @@ import {createRoot} from "react-dom/client";
 import {useState} from "react";
 import { loadFragment } from '../../utils';
 import './header.scss'
+import ImagePreloader from "../hero/image.tsx";
 
 const Header = (props: Data) => {
     const [menuOpen, setMenuOpen] = useState('')
@@ -10,11 +11,22 @@ const Header = (props: Data) => {
         e.stopPropagation();
         setMenuOpen(menuOpen === menu? '' : menu)
     }
+    let logo;
+
+    if (props.logo) {
+        const pictureEl = props.logo;
+        const img = {
+            pictureEl,
+            lazy: true
+        }
+        logo = <ImagePreloader {...img}/>
+    }
+
     return (
         <div className="primary grid clearfix">
-            {props.image &&
+            {logo &&
                 <a href="#" className="logo logo--authored logo--default" title="ANZ Logo">
-                    <span dangerouslySetInnerHTML={{__html: props.image.outerHTML}}></span>
+                    {logo}
                 </a>
             }
             {props.menus.map((menu: Menu) =>
@@ -41,7 +53,20 @@ const MenuItem = (props: SubMenu) => {
     )
 }
 
-const Promo = () => {
+const Promo = (props: PromoProps) => {
+    let headingImg;
+
+    if (props.headingImg) {
+        const pictureEl = props.headingImg;
+        const img = {
+            pictureEl,
+            lazy: true,
+            breakpoints: [
+                {  width: '251' , media: '(min-width: 300px)'},
+            ]
+        }
+        headingImg = <ImagePreloader {...img}/>
+    }
     return (
         <div className="subNav__promo">
             <div className="subNav__promo__item">
@@ -51,13 +76,15 @@ const Promo = () => {
                             <div className="clearfix">
                             </div>
                             <div className="clearfix">
-                                <div className="image bg-transparent image--noborder">
-                                    <a href="#" aria-label="Visit our security hub">
-                                        <div data-picture="" data-alt="ANZ Falcon">
-                                            <img alt="ANZ Falcon" src="/public/1712895216397.jpg"/>
-                                        </div>
-                                    </a>
-                                </div>
+                                {headingImg &&
+                                    <div className="image bg-transparent image--noborder">
+                                        <a href="#" aria-label="Visit our security hub">
+                                            <div data-picture="" data-alt="ANZ Falcon">
+                                                {headingImg}
+                                            </div>
+                                        </a>
+                                    </div>
+                                }
                                 <div className="text" data-emptytext="Text">
 
                                     <p className="rte--body2-regular padding-top--5px" style={{textAlign: 'center'}}>
@@ -115,7 +142,7 @@ const Menu = (props: MenuProps) => {
                                         }
                                     </ul>
                                 </div>
-                                <Promo/>
+                                <Promo {...props}/>
                             </div>
                         </div>
                     </li>
@@ -141,20 +168,24 @@ type Menu = {
     title: string,
     description: string,
     submenus: SubMenu[],
+    headingImg?: HTMLPictureElement | null
 }
 
 type Data = {
     menus: Menu[]
-    image?: Element | null
+    logo?: HTMLPictureElement | null
+}
+
+type PromoProps = {
+    headingImg?: HTMLPictureElement | null
 }
 
 export default async function decorate(block: HTMLDivElement) {
 
     const navPath = `${window.location.href}nav`;
     const fragment = await loadFragment(navPath);
-
     const data: Data = {
-        image: fragment?.children[0].querySelector('picture'),
+        logo: fragment?.children[0].querySelector('picture'),
         menus: [
             {
                 href: '/personal/',
@@ -203,8 +234,8 @@ export default async function decorate(block: HTMLDivElement) {
                         description: 'Foreign exchange, travel insurance, travel money card & international payments',
                         icon: 'foreignfx'
                     },
-                ]
-
+                ],
+                headingImg: fragment?.children[1].querySelector('picture'),
             },
             {
                 href: '/business/',
