@@ -93,7 +93,7 @@ export default function decorate(block: HTMLDivElement) {
                 {media: '(max-width: 800px)', width: '350'},
                 {media: '(max-width: 1140px)', width: '1150'},
                 {media: '(max-width: 3000px)', width: '1593'},
-                {width: '2048'}
+                {media: '(min-width: 3001px)', width: '2048'},
             ]
         }
     }

@@ -38,7 +38,7 @@ const ImagePreloader = ({breakpoints = [], lazy = false, preload = false, pictur
     useEffect(() => {
 
         setSources(breakpoints.map((breakpoint) => {
-            const srcSet = `${pathname}?width=${breakpoint.width}&format=webply&optimize=medium`
+            const srcSet = `${pathWithoutExtension}.${ext}?width=${breakpoint.width}&format=webply&optimize=medium`
             return {
                 type: 'image/webp',
                 srcSet: srcSet,
@@ -54,13 +54,11 @@ const ImagePreloader = ({breakpoints = [], lazy = false, preload = false, pictur
                     {sources.map((source, index) => (
                         <link rel="preload" as="image" media={source.media} href={source.srcSet} key={index}></link>
                     ))}
-                    <link rel="preload" as="image" href={imgSrc}></link>
                 </>
             )}
             <picture>
                 {sources.map((source, index) => (
                     <>
-                        <source key={index} media={source.media} srcSet={source.srcSet}/>
                         <source key={index} media={source.media} type={source.type} srcSet={source.srcSet}/>
                     </>
                 ))}
