@@ -56,14 +56,14 @@ const ImagePreloader = ({breakpoints = [], lazy = false, preload = false, pictur
 
     return (
         <>
-            {/*{lazy && (*/}
-            {/*    <>*/}
-            {/*        {sources.map((source, index) => (*/}
-            {/*            <link rel="preload" as="image" href={source.srcSet} key={index}></link>*/}
-            {/*        ))}*/}
-            {/*        <link rel="preload" as="image" href={imgSrc}></link>*/}
-            {/*    </>*/}
-            {/*)}*/}
+            {preload && (
+                <>
+                    {sources.map((source, index) => (
+                        <link rel="preload" as="image" href={source.srcSet} key={index}></link>
+                    ))}
+                    <link rel="preload" as="image" href={imgSrc}></link>
+                </>
+            )}
             <picture>
                 {sources.map((source, index) => (
                     <>
