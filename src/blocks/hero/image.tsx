@@ -54,7 +54,10 @@ const ImagePreloader = ({ breakpoints = [], eager = false, pictureEl }: ImagePre
 
     return (
         <>
-            {/*<link rel="preload" as="image" href={imgSrc}></link>*/}
+            {sources.map((source, index) => (
+                <link rel="preload" as="image" href={source.srcSet} key={index}></link>
+            ))}
+            <link rel="preload" as="image" href={imgSrc}></link>
             <picture>
                 {sources.map((source, index) => (
                     <>
