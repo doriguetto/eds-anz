@@ -86,7 +86,7 @@ export default function decorate(block: HTMLDivElement) {
     const pictureEl = block.querySelector('picture');
     let img;
     if (pictureEl) {
-        img = createOptimizedPicture(pictureEl, false, [
+        img = createOptimizedPicture(pictureEl, true, [
             {media: '(max-width: 800px)', width: '350'},
             {media: '(max-width: 1140px)', width: '1150'},
             {media: '(max-width: 3000px)', width: '1593'},
