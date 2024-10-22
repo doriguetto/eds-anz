@@ -16,9 +16,10 @@ export type ImagePreloaderProps = {
     pictureEl: HTMLPictureElement | null | undefined,
     lazy?: boolean;
     preload?: boolean;
+    ext?: string;
 };
 
-const ImagePreloader = ({breakpoints = [], lazy = false, preload = false, pictureEl}: ImagePreloaderProps) => {
+const ImagePreloader = ({breakpoints = [], lazy = false, preload = false, pictureEl, ext = 'webp'}: ImagePreloaderProps) => {
     const [sources, setSources] = useState<ImageSource[]>([]);
     if (!pictureEl) return null;
     const img = pictureEl.querySelector('img')
@@ -30,22 +31,14 @@ const ImagePreloader = ({breakpoints = [], lazy = false, preload = false, pictur
     const height = img?.getAttribute('height') || 0;
 
     const url = new URL(imgElSrc, window.location.href);
-    const {pathname} = url;
-    // const ext = pathname.substring(pathname.lastIndexOf('.') + 1);
-    const imgSrc = `${pathname}?width=2048&amp;format=jpeg&amp;optimize=medium`
-
+    const { pathname} = url;
+    const pathWithoutExtension = pathname.substring(0,pathname.lastIndexOf('.') );
+    const imgSrc = `${pathWithoutExtension}.${ext}?width=2048&amp;format=jpeg&amp;optimize=medium`
 
     useEffect(() => {
-        // if (preload) {
-        //     const reactImg = new Image()
-        //     reactImg.src = imgSrc;
-        // }
+
         setSources(breakpoints.map((breakpoint) => {
             const srcSet = `${pathname}?width=${breakpoint.width}&format=webply&optimize=medium`
-            // if (preload) {
-            //     const reactImg = new Image()
-            //     reactImg.src = srcSet;
-            // }
             return {
                 type: 'image/webp',
                 srcSet: srcSet,
@@ -69,17 +62,15 @@ const ImagePreloader = ({breakpoints = [], lazy = false, preload = false, pictur
                     <>
                         <source key={index} media={source.media} srcSet={source.srcSet}/>
                         <source key={index} media={source.media} type={source.type} srcSet={source.srcSet}/>
-                        {index === sources.length - 1 && (
-                            <img
-                                loading={lazy ? 'lazy' : 'eager'}
-                                alt={alt}
-                                width={width}
-                                height={height}
-                                src={`${pathname}?width=2048&amp;format=jpeg&amp;optimize=medium`}
-                            />
-                        )}
                     </>
                 ))}
+                <img
+                    loading={lazy ? 'lazy' : 'eager'}
+                    alt={alt}
+                    width={width}
+                    height={height}
+                    src={imgSrc}
+                />
             </picture>
         </>
     );
