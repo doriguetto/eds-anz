@@ -96,6 +96,7 @@ export default function decorate(block: HTMLDivElement) {
     const heroData: HeroData = {
         img
     }
+
     // debugger
     createRoot(block).render(<Hero {...heroData}/>)
     // debugger
