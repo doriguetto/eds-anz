@@ -27,8 +27,8 @@ const ImagePreloader = ({breakpoints = [], lazy = false, preload = false, pictur
 
     if (!imgElSrc) return null;
     const alt = img?.getAttribute('alt') || '';
-    // const width = img?.getAttribute('width') || 0;
-    // const height = img?.getAttribute('height') || 0;
+    const width = img?.getAttribute('width') || 0;
+    const height = img?.getAttribute('height') || 0;
 
     const url = new URL(imgElSrc, window.location.href);
     const { pathname} = url;
@@ -59,14 +59,14 @@ const ImagePreloader = ({breakpoints = [], lazy = false, preload = false, pictur
             <picture>
                 {sources.map((source, index) => (
                     <>
-                        <source key={index} media={source.media} type={source.type} srcSet={source.srcSet}/>
+                        <source height="auto" key={index} media={source.media} type={source.type} srcSet={source.srcSet}/>
                     </>
                 ))}
                 <img
                     loading={lazy ? 'lazy' : 'eager'}
                     alt={alt}
-                    // width={width}
-                    // height={height}
+                    width={width}
+                    height={height}
                     src={imgSrc}
                 />
             </picture>

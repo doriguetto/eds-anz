@@ -77,7 +77,7 @@ const Promo = (props: PromoProps) => {
                             </div>
                             <div className="clearfix">
                                 {headingImg &&
-                                    <div className="image bg-transparent image--noborder">
+                                    <div className="image bg-transparent image--noborder promo-heading">
                                         <a href="#" aria-label="Visit our security hub">
                                             <div data-picture="" data-alt="ANZ Falcon">
                                                 {headingImg}
