@@ -1,6 +1,5 @@
 import {createRoot} from "react-dom/client";
 import './hero.scss';
-import {createOptimizedPicture} from "../../utils";
 import ImagePreloader, {ImagePreloaderProps} from "./image.tsx";
 
 const Hero = (props: HeroData) => {

@@ -1,15 +1,17 @@
+import {useEffect} from "react";
+
 export type ImageBreakpoint = {
     media?: string;
     width: string;
 };
 
 export type ImagePreloaderProps = {
-    breakpoints: ImageBreakpoint[];
+    breakpoints?: ImageBreakpoint[];
     pictureEl: HTMLPictureElement | null | undefined,
     eager?: boolean;
 };
 
-const ImagePreloader = ({ breakpoints = [], eager, pictureEl }: ImagePreloaderProps) => {
+const ImagePreloader = ({ breakpoints = [], eager = false, pictureEl }: ImagePreloaderProps) => {
 
     if (!pictureEl) return null;
     const img = pictureEl.querySelector('img')
@@ -30,7 +32,10 @@ const ImagePreloader = ({ breakpoints = [], eager, pictureEl }: ImagePreloaderPr
         }
     });
 
-    new Image().src = `${pathname}?format=${ext}&optimize=medium`;
+    useEffect(() => {
+        const reactImg = new Image()
+        reactImg.src = `${pathname}?format=${ext}&optimize=medium`;
+    }, []);
 
     return (
         <picture>
@@ -40,7 +45,7 @@ const ImagePreloader = ({ breakpoints = [], eager, pictureEl }: ImagePreloaderPr
                     <source key={index} media={source.media} type={source.type} srcSet={source.srcSet}/>
                     {index === sources.length - 1 && (
                         <img
-                            loading={eager ? 'eager' : 'lazy'}
+                            loading={eager? 'eager' :'lazy'}
                             alt={alt}
                             src={`${pathname}?width=2048&amp;format=jpeg&amp;optimize=medium`}
                         />
