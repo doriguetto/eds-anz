@@ -36,16 +36,16 @@ const ImagePreloader = ({breakpoints = [], lazy = false, preload = false, pictur
 
 
     useEffect(() => {
-        if (preload) {
-            const reactImg = new Image()
-            reactImg.src = imgSrc;
-        }
+        // if (preload) {
+        //     const reactImg = new Image()
+        //     reactImg.src = imgSrc;
+        // }
         setSources(breakpoints.map((breakpoint) => {
             const srcSet = `${pathname}?width=${breakpoint.width}&format=webply&optimize=medium`
-            if (preload) {
-                const reactImg = new Image()
-                reactImg.src = srcSet;
-            }
+            // if (preload) {
+            //     const reactImg = new Image()
+            //     reactImg.src = srcSet;
+            // }
             return {
                 type: 'image/webp',
                 srcSet: srcSet,
