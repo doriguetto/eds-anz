@@ -1,4 +1,3 @@
-import {useEffect, useState} from "react";
 
 export type ImageBreakpoint = {
     media?: string;
@@ -17,8 +16,8 @@ export type ImagePreloaderProps = {
     eager?: boolean;
 };
 
-const ImagePreloader = ({ breakpoints = [], eager = false, pictureEl }: ImagePreloaderProps) => {
-    const [sources, setSources] = useState<ImageSource[]>([]);
+const ImagePreloader = ({breakpoints = [], eager = false, pictureEl}: ImagePreloaderProps) => {
+    // const [sources, setSources] = useState<ImageSource[]>([]);
     if (!pictureEl) return null;
     const img = pictureEl.querySelector('img')
     const imgElSrc = img?.getAttribute('src')
@@ -29,35 +28,39 @@ const ImagePreloader = ({ breakpoints = [], eager = false, pictureEl }: ImagePre
     const height = img?.getAttribute('height') || 0;
 
     const url = new URL(imgElSrc, window.location.href);
-    const { pathname } = url;
+    const {pathname} = url;
     // const ext = pathname.substring(pathname.lastIndexOf('.') + 1);
     const imgSrc = `${pathname}?width=2048&amp;format=jpeg&amp;optimize=medium`
 
 
-    useEffect(() => {
+    // useEffect(() => {
+    //     const reactImg = new Image()
+    //     reactImg.src = imgSrc;
+
+    const sources = breakpoints.map((breakpoint) => {
+        const srcSet = `${pathname}?width=${breakpoint.width}&format=webply&optimize=medium`
         const reactImg = new Image()
-        reactImg.src = imgSrc;
-
-        const imgBreakpoints = breakpoints.map((breakpoint) => {
-            const srcSet = `${pathname}?width=${breakpoint.width}&format=webply&optimize=medium`
-            const reactImg = new Image()
-            reactImg.src = srcSet;
-            return {
-                type: 'image/webp',
-                srcSet: srcSet,
-                media: breakpoint.media
-            }
-        })
-
-        setSources(imgBreakpoints)
-    }, []);
+        reactImg.src = srcSet;
+        return {
+            type: 'image/webp',
+            srcSet: srcSet,
+            media: breakpoint.media
+        }
+    })
+    //
+    //     setSources(imgBreakpoints)
+    // }, []);
 
     return (
         <>
-            {sources.map((source, index) => (
-                <link rel="preload" as="image" href={source.srcSet} key={index}></link>
-            ))}
-            <link rel="preload" as="image" href={imgSrc}></link>
+            {!eager && (
+                <>
+                    {sources.map((source, index) => (
+                        <link rel="preload" as="image" href={source.srcSet} key={index}></link>
+                    ))}
+                    <link rel="preload" as="image" href={imgSrc}></link>
+                </>)
+            }
             <picture>
                 {sources.map((source, index) => (
                     <>
@@ -65,7 +68,7 @@ const ImagePreloader = ({ breakpoints = [], eager = false, pictureEl }: ImagePre
                         <source key={index} media={source.media} type={source.type} srcSet={source.srcSet}/>
                         {index === sources.length - 1 && (
                             <img
-                                loading={eager? 'eager' :'lazy'}
+                                loading={eager ? 'eager' : 'lazy'}
                                 alt={alt}
                                 width={width}
                                 height={height}
