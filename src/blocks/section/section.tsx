@@ -13,7 +13,7 @@ const BadgeWithCardSection = (props: SectionData) => {
     const cardData: CardData = {
         heading: innerSections && innerSections[1].children[0],
         button: innerSections && innerSections[1].children[2],
-        image: innerSections && innerSections[1].children[4]
+        cardPicture: innerSections && innerSections[1].children[4].querySelector('picture')
     }
     return (
         <div className="invisibleMbox" id="content-anzcomau-en-personal-anz_default_par-start">
