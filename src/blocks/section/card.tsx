@@ -19,7 +19,6 @@ export default (props: CardData) => {
         }
         cardPicture = <ImagePreloader {...img}/>
     }
-    debugger
     return (
         <>
             <div className="container__item container__main__element     none">

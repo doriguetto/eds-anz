@@ -1,2 +1,2 @@
-import{c as o,j as t}from"../__chunks__/client.Dzuxdzeo.js";import{I as s}from"../__chunks__/image.CcdI8vHB.js";const c=r=>{let e;if(r.separatorPicture){const a={pictureEl:r.separatorPicture,lazy:!0};e=t.jsx(s,{...a})}return t.jsx("div",{className:"text parbase",children:t.jsx("p",{className:"paragraph-text--regular padding-top--10px margin-bottom--30px",children:e})})};function n(r){const e={separatorPicture:r.querySelector("picture")};o(r).render(t.jsx(c,{...e}))}export{n as default};
+import{c as r,j as t}from"../__chunks__/client.Dzuxdzeo.js";const a=()=>t.jsx("div",{className:"separator-element padding-top--10px margin-bottom--30px"});function s(e){r(e).render(t.jsx(a,{}))}export{s as default};
 //# sourceMappingURL=separator.js.map
