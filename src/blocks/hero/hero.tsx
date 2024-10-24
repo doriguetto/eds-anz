@@ -90,10 +90,14 @@ export default function decorate(block: HTMLDivElement) {
             pictureEl,
             preload: true,
             breakpoints: [
-                {media: '(max-width: 800px)', width: '350'},
-                {media: '(max-width: 1140px)', width: '1150'},
-                {media: '(max-width: 3000px)', width: '1593'},
-                {media: '(min-width: 3001px)', width: '2048'},
+                // {media: '(max-width: 800px)', width: '650'},
+                // {media: '(max-width: 1140px)', width: '1150'},
+                // {media: '(max-width: 3000px)', width: '1593'},
+                // {media: '(min-width: 3001px)', width: '2048'},
+
+
+                {media: '(max-width: 768px)', width: '960'},
+                {media: '(max-width: 960px)', width: '1536'},
             ]
         }
     }
