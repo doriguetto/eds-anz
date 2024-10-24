@@ -17,7 +17,10 @@ const Header = (props: Data) => {
         const pictureEl = props.logo;
         const img = {
             pictureEl,
-            lazy: true
+            lazy: true,
+            breakpoints: [
+                {  width: '251' , media: '(max-width: 300px)'},
+            ]
         }
         logo = <ImagePreloader {...img}/>
     }
