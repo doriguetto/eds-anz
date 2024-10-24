@@ -8,4 +8,17 @@
   .card-img img {
     height: auto;
   }
+
+  img {
+    height: auto;
+  }
+
+  .image-with-badge  {
+    .badge img {
+      width: 148px;
+    }
+    .badge-button {
+      margin-top: 40px;
+    }
+  }
 }

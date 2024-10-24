@@ -18,6 +18,7 @@ export default (props: BadgeData) => {
 
     return (
         <div className="container__item container__main__element none badge">
+
             {icon &&
                 <p className=" padding-top--0px ">
                     {icon}

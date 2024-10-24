@@ -4716,3 +4716,10 @@ main > div[data-section-status="loaded"] {
 footer {
   min-height: 500px;
 }
+
+.btn--transparent {
+  white-space: nowrap;
+  &:hover a {
+    color: white;
+  }
+}
