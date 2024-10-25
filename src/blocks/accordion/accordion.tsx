@@ -24,7 +24,7 @@ const Accordion = (props: AccordionData) => {
                     <div className="container__main">
                         <div className="aem__component clearfix">
                             <div className="container__main__element">
-                                <div className="accordion accordion--open">
+                                <div className="accordion accordion--open text-underline">
                                     {props.title &&
                                         <div
                                             onMouseOver={hover}

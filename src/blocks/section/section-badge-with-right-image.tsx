@@ -55,7 +55,7 @@ export default ({innerSections}: SectionData) => {
                             <div className="aem__component clearfix">
                                 <div className="container__item container__main__element     none">
                                     <div className="box--top">
-                                        <div className="text parbase">
+                                        <div className="text parbase text-underline">
                                             {badgeImg &&
                                                 <p className=" padding-top--40px badge">
                                                     {badgeImg}
@@ -72,7 +72,7 @@ export default ({innerSections}: SectionData) => {
                                     <div className="box--top">
                                         {sectionContent &&
 
-                                            <div className="text parbase"
+                                            <div className="text parbase text-underline"
                                                  dangerouslySetInnerHTML={{__html: sectionContent.outerHTML}}>
 
                                             </div>

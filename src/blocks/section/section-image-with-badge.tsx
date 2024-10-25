@@ -82,7 +82,7 @@ export default ({innerSections}: SectionData) => {
                             <div className="aem__component clearfix">
                                 <div className="container__item container__aside__element     none">
                                     <div className="box--top">
-                                        <div className="text parbase">
+                                        <div className="text text-underline parbase">
                                             {badgeImg &&
                                                 <p className=" padding-top--40px badge">
                                                     {badgeImg}
