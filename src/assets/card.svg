@@ -1,0 +1,38 @@
+<svg width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="400" height="250" fill="white"/>
+<rect x="152" y="99" width="156" height="111" rx="8" fill="#F2FAFD"/>
+<path d="M308 198H153V202C153 206.418 156.582 210 161 210H300C304.418 210 308 206.418 308 202V198Z" fill="#F2FAFD"/>
+<path d="M239 99H300C304.418 99 308 102.582 308 107V202C308 206.418 304.418 210 300 210H160C155.582 210 152 206.418 152 202V185.383" stroke="#004165" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M364 210L54 210" stroke="#004165" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49 210H36" stroke="#004165" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="233" y="119" width="75" height="18" fill="#BFDEEE" stroke="#004165" stroke-width="1.8"/>
+<rect x="78" y="69" width="155" height="111" rx="8" fill="white" stroke="#004165" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M174 158L218 158" stroke="#007DBA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M158 151H218" stroke="#007DBA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="92" y="93" width="30" height="26" rx="2" fill="white" stroke="#FFC937" stroke-width="1.8"/>
+<circle cx="95.0976" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<circle cx="104.39" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<circle cx="113.683" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<circle cx="113.683" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<circle cx="122.976" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<circle cx="188.024" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<circle cx="197.317" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<circle cx="206.61" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<circle cx="206.61" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<circle cx="215.902" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<circle cx="141.561" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<circle cx="150.854" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<circle cx="160.146" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<circle cx="160.146" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<circle cx="169.439" cy="138.098" r="3.09756" fill="#F2FAFD" stroke="#007DBA" stroke-width="1.8"/>
+<rect x="92" y="106" width="30" height="13" rx="2" stroke="#FFC937" stroke-width="1.8"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M67 45C67 47.2088 65.2096 49 63 49C60.7912 49 59 47.2088 59 45C59 42.7904 60.7912 41 63 41C65.2096 41 67 42.7904 67 45Z" stroke="#00C6D7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M335 83V95" stroke="#004165" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M341 89H329" stroke="#004165" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45 119V111" stroke="#004165" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49 115H41" stroke="#004165" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M268 51L268 71" stroke="#FFC937" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M248 58L248 71" stroke="#FFC937" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M258 39L258 71" stroke="#FFC937" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M304 53C304 55.2088 302.21 57 300 57C297.791 57 296 55.2088 296 53C296 50.7904 297.791 49 300 49C302.21 49 304 50.7904 304 53Z" stroke="#00C6D7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

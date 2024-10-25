@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["es2017", "dom", "dom.iterable"],
+    "declaration": true,
+    "noEmit": true,
+    "emitDeclarationOnly": false,
+    "strict": false,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "esModuleInterop": true,
+    "paths": {
+      "Blocks/*": ["./src/blocks/*"],
+      "Components/*": ["./src/components/*"],
+      "Directives/*" :["./src/directives/*"],
+      "Services/*": ["./src/services/*"],
+      "Helpers/*": ["./src/helpers/*"],
+      "Constants/*": ["./src/constants/*"],
+      "Types/*": ["./src/types/*"],
+      "Utils/*": ["./src/utils/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.json"],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
